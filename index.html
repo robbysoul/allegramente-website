@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AllegraMente — 59 esercizi cognitivi basati su paradigmi sperimentali verificati. App iOS per allenare memoria, attenzione e funzioni cognitive.">
+  <meta name="description" content="AllegraMente — 58 esercizi cognitivi basati su paradigmi sperimentali verificati. App iOS per allenare memoria, attenzione e funzioni cognitive.">
   <meta name="theme-color" content="#050F1A">
   <title>AllegraMente — Allena la tua mente ogni giorno</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,9 +46,8 @@
     h1{font-family:'Nunito',sans-serif;font-size:clamp(3.2rem,9vw,6rem);font-weight:900;letter-spacing:-.02em;background:linear-gradient(140deg,#fff 20%,rgba(180,225,255,.7));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px;animation:fadeUp .7s ease .2s both}
     .hero-tagline{font-family:'Nunito',sans-serif;font-size:clamp(1rem,2.8vw,1.3rem);font-weight:600;color:var(--muted);margin-bottom:24px;animation:fadeUp .7s ease .3s both}
     .hero-desc{font-size:1rem;color:var(--muted);line-height:1.75;margin-bottom:40px;animation:fadeUp .7s ease .4s both}
-    .hero-cta{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;background:var(--cyan);border-radius:100px;color:#000;font-family:'Nunito',sans-serif;font-weight:800;font-size:.95rem;animation:fadeUp .7s ease .5s both;transition:opacity .2s;cursor:pointer}
-    .hero-cta:hover{opacity:.88}
-    .hero-cta .pill{background:rgba(0,0,0,.15);padding:3px 10px;border-radius:100px;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+    .hero-cta{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:100px;color:var(--muted);font-family:'Nunito',sans-serif;font-weight:700;font-size:.92rem;animation:fadeUp .7s ease .5s both;cursor:default}
+    .hero-cta .pill{background:rgba(0,212,255,.15);border:1px solid rgba(0,212,255,.3);color:var(--cyan);padding:3px 10px;border-radius:100px;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
     @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
 
     .stats-bar{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:36px 0}
@@ -120,9 +119,8 @@
     .cta-pill{display:inline-block;padding:7px 18px;background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.25);border-radius:100px;font-size:.76rem;color:var(--cyan);font-family:'Nunito',sans-serif;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:22px}
     .cta-title{font-size:clamp(2rem,5vw,3rem);font-weight:900;letter-spacing:-.02em;margin-bottom:14px}
     .cta-sub{font-size:1rem;color:var(--muted);margin-bottom:36px;max-width:460px;margin-left:auto;margin-right:auto;line-height:1.75}
-    .app-store-btn{display:inline-flex;align-items:center;gap:14px;padding:16px 32px;background:var(--cyan);border-radius:16px;color:#000;font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;transition:opacity .2s;cursor:pointer}
-    .app-store-btn:hover{opacity:.88}
-    .app-store-btn .tag{background:rgba(0,0,0,.15);padding:3px 10px;border-radius:100px;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+    .app-badge{display:inline-flex;align-items:center;gap:14px;padding:14px 28px;background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:16px;color:var(--muted);font-size:.88rem;font-weight:600}
+    .app-badge .tag{background:rgba(0,212,255,.12);border:1px solid rgba(0,212,255,.25);color:var(--cyan);padding:3px 9px;border-radius:100px;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 
     footer{background:#030A14;border-top:1px solid var(--border);padding:48px 0;text-align:center}
     .footer-logo{display:flex;align-items:center;justify-content:center;gap:10px;font-family:'Nunito',sans-serif;font-weight:900;font-size:1.2rem;margin-bottom:18px}
@@ -182,18 +180,18 @@
     <h1>AllegraMente</h1>
     <p class="hero-tagline" data-i18n="hero.tagline"></p>
     <p class="hero-desc" data-i18n="hero.desc"></p>
-    <a class="hero-cta" href="https://apps.apple.com/us/app/allegramente/id6761313217" target="_blank" rel="noopener">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+    <div class="hero-cta">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12l4 4 4-4"/></svg>
       <span data-i18n="hero.cta_label"></span>
       <span class="pill" data-i18n="hero.cta_pill"></span>
-    </a>
+    </div>
   </div>
 </section>
 
 <div class="stats-bar">
   <div class="container">
     <div class="stats-grid">
-      <div class="stat"><span class="stat-num">59</span><span class="stat-lbl" data-i18n="stats.exercises"></span></div>
+      <div class="stat"><span class="stat-num">58</span><span class="stat-lbl" data-i18n="stats.exercises"></span></div>
       <div class="stat"><span class="stat-num">11</span><span class="stat-lbl" data-i18n="stats.categories"></span></div>
       <div class="stat"><span class="stat-num">3</span><span class="stat-lbl" data-i18n="stats.levels"></span></div>
       <div class="stat"><span class="stat-num" style="font-size:1.5rem;padding-top:8px">iPhone</span><span class="stat-lbl" data-i18n="stats.platform"></span></div>
@@ -289,11 +287,11 @@
     <h2 class="cta-title reveal" data-i18n="cta.title"></h2>
     <p class="cta-sub reveal reveal-d1" data-i18n="cta.sub"></p>
     <div class="reveal reveal-d2">
-      <a class="app-store-btn" href="https://apps.apple.com/us/app/allegramente/id6761313217" target="_blank" rel="noopener">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      <div class="app-badge">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
         <span data-i18n="cta.badge_text"></span>
         <span class="tag" data-i18n="cta.badge_tag"></span>
-      </a>
+      </div>
     </div>
   </div>
 </section>
@@ -315,11 +313,11 @@
 <script>
 const T = {
   "it": {
-    "hero.badge": "App iOS · Disponibile ora",
+    "hero.badge": "App iOS · Prossimamente",
     "hero.tagline": "Allena la tua mente ogni giorno",
-    "hero.desc": "59 esercizi cognitivi sviluppati sulla base di paradigmi sperimentali verificati, progettati per stimolare memoria, attenzione, funzioni esecutive e capacità di elaborazione delle informazioni.",
+    "hero.desc": "58 esercizi cognitivi sviluppati sulla base di paradigmi sperimentali verificati, progettati per stimolare memoria, attenzione, funzioni esecutive e capacità di elaborazione delle informazioni.",
     "hero.cta_label": "Scarica su App Store",
-    "hero.cta_pill": "Gratis",
+    "hero.cta_pill": "Prossimamente",
     "stats.exercises": "esercizi cognitivi",
     "stats.categories": "categorie cognitive",
     "stats.levels": "livelli di difficoltà",
@@ -352,20 +350,20 @@ const T = {
     "sc.lbl2": "Mappa Cognitiva",
     "sc.lbl3": "Progressi",
     "sc.lbl4": "Risultati",
-    "cta.pill": "Disponibile ora su App Store",
+    "cta.pill": "Disponibile presto",
     "cta.title": "Iniziamo?",
-    "cta.sub": "AllegraMente è disponibile gratuitamente su App Store. Scaricala adesso e inizia ad allenarti.",
+    "cta.sub": "AllegraMente sarà presto disponibile sull’App Store. Torna a visitare questa pagina per scoprire quando.",
     "cta.badge_text": "App Store · iPhone",
-    "cta.badge_tag": "Scarica gratis",
+    "cta.badge_tag": "Prossimamente",
     "footer.support": "Supporto",
     "footer.copy": "© 2026 AllegraMente · Tutti i diritti riservati"
   },
   "en": {
-    "hero.badge": "iOS App · Available now",
+    "hero.badge": "iOS App · Coming Soon",
     "hero.tagline": "Train your mind every day",
-    "hero.desc": "59 cognitive exercises developed on the basis of verified experimental paradigms, designed to stimulate memory, attention, executive functions and information processing skills.",
+    "hero.desc": "58 cognitive exercises developed on the basis of verified experimental paradigms, designed to stimulate memory, attention, executive functions and information processing skills.",
     "hero.cta_label": "Download on App Store",
-    "hero.cta_pill": "Free",
+    "hero.cta_pill": "Coming Soon",
     "stats.exercises": "cognitive exercises",
     "stats.categories": "cognitive categories",
     "stats.levels": "difficulty levels",
@@ -398,20 +396,20 @@ const T = {
     "sc.lbl2": "Cognitive Map",
     "sc.lbl3": "Progress",
     "sc.lbl4": "Results",
-    "cta.pill": "Now available on App Store",
+    "cta.pill": "Available soon",
     "cta.title": "Shall we begin?",
-    "cta.sub": "AllegraMente is now available for free on the App Store. Download it and start training.",
+    "cta.sub": "AllegraMente will be available on the App Store soon. Check back here to find out when.",
     "cta.badge_text": "App Store · iPhone",
-    "cta.badge_tag": "Download free",
+    "cta.badge_tag": "Coming Soon",
     "footer.support": "Support",
     "footer.copy": "© 2026 AllegraMente · All rights reserved"
   },
   "es": {
-    "hero.badge": "App iOS · Disponible ahora",
+    "hero.badge": "App iOS · Próximamente",
     "hero.tagline": "Entrena tu mente cada día",
-    "hero.desc": "59 ejercicios cognitivos desarrollados sobre la base de paradigmas experimentales verificados, diseñados para estimular la memoria, la atención, las funciones ejecutivas y la capacidad de procesamiento de la información.",
+    "hero.desc": "58 ejercicios cognitivos desarrollados sobre la base de paradigmas experimentales verificados, diseñados para estimular la memoria, la atención, las funciones ejecutivas y la capacidad de procesamiento de la información.",
     "hero.cta_label": "Descargar en App Store",
-    "hero.cta_pill": "Gratis",
+    "hero.cta_pill": "Próximamente",
     "stats.exercises": "ejercicios cognitivos",
     "stats.categories": "categorías cognitivas",
     "stats.levels": "niveles de dificultad",
@@ -444,11 +442,11 @@ const T = {
     "sc.lbl2": "Mapa Cognitivo",
     "sc.lbl3": "Progreso",
     "sc.lbl4": "Resultados",
-    "cta.pill": "Disponible ahora en App Store",
+    "cta.pill": "Disponible pronto",
     "cta.title": "¿Empezamos?",
-    "cta.sub": "AllegraMente ya está disponible gratis en la App Store. Descárgala y empieza a entrenar.",
+    "cta.sub": "AllegraMente estará disponible pronto en la App Store. Vuelve a esta página para saber cuándo.",
     "cta.badge_text": "App Store · iPhone",
-    "cta.badge_tag": "Descargar gratis",
+    "cta.badge_tag": "Próximamente",
     "footer.support": "Soporte",
     "footer.copy": "© 2026 AllegraMente · Todos los derechos reservados"
   }
