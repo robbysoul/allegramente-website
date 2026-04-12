@@ -3,20 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AllegraMente — 58 esercizi cognitivi basati su paradigmi sperimentali verificati. App iOS per allenare memoria, attenzione e funzioni cognitive.">
+  <meta name="description" content="AllegraMente — 58 esercizi cognitivi basati su paradigmi scientifici per allenare memoria, attenzione e funzioni esecutive. Gratis, senza abbonamenti.">
   <meta name="theme-color" content="#050F1A">
-  <title>AllegraMente — Allena la tua mente ogni giorno</title>
+  <title>AllegraMente — App per allenare memoria, concentrazione e funzioni cognitive | iOS</title>
+  <meta name="keywords" content="allenamento memoria, migliorare concentrazione, esercizi cognitivi, brain training scientifico, memoria di lavoro, attenzione, funzioni esecutive, neuropsicologia, app memoria iOS, cognitive training">
+  <meta name="author" content="AllegraMente">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.allegramente.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.allegramente.app/">
+  <meta property="og:title" content="AllegraMente — Allenamento cognitivo serio. Ogni giorno.">
+  <meta property="og:description" content="58 esercizi per migliorare memoria, concentrazione e funzioni esecutive. Basati su ricerca scientifica. Gratuito, senza abbonamenti.">
+  <meta property="og:image" content="https://www.allegramente.app/og-image.png">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="de_DE">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AllegraMente — Allenamento cognitivo serio. Ogni giorno.">
+  <meta name="twitter:description" content="58 esercizi per migliorare memoria, concentrazione e funzioni esecutive. App iOS gratuita.">
+  <meta name="twitter:image" content="https://www.allegramente.app/og-image.png">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="it" href="https://www.allegramente.app/">
+  <link rel="alternate" hreflang="en" href="https://www.allegramente.app/">
+  <link rel="alternate" hreflang="es" href="https://www.allegramente.app/">
+  <link rel="alternate" hreflang="fr" href="https://www.allegramente.app/">
+  <link rel="alternate" hreflang="de" href="https://www.allegramente.app/">
+  <link rel="alternate" hreflang="x-default" href="https://www.allegramente.app/">
+
+  <!-- Structured Data: MobileApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "AllegraMente",
+    "description": "58 esercizi cognitivi basati su paradigmi scientifici per allenare memoria, concentrazione, attenzione e funzioni esecutive. Gratuito, senza abbonamenti.",
+    "url": "https://www.allegramente.app/",
+    "downloadUrl": "https://apps.apple.com/us/app/allegramente/id6761313217",
+    "operatingSystem": "iOS",
+    "applicationCategory": "HealthApplication",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+    "inLanguage": ["it", "en", "es", "fr", "de"],
+    "featureList": [
+      "58 esercizi cognitivi in 11 aree",
+      "Memoria di lavoro, attenzione, metamemoria",
+      "3 livelli di difficoltà",
+      "Report PDF esportabile",
+      "Profili multipli",
+      "Nessun abbonamento",
+      "Privacy totale - dati solo sul dispositivo"
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg:#050F1A; --bg2:#081828; --bg-card:#0B1E30; --bg-card-h:#0F2440;
-      --border:rgba(0,200,230,0.10); --border-h:rgba(0,200,230,0.22);
-      --text:#E8F4FF; --muted:#7AAABF; --dim:#2A4A60;
-      --cyan:#00D4FF; --blue:#2D7FF9; --teal:#00BFA5; --purple:#7C4DFF;
-      --green:#1DE9B6; --orange:#FF8C42; --yellow:#FFD740; --red:#FF5370; --indigo:#82B1FF;
-    }
+    :root{--bg:#050F1A;--bg2:#081828;--bg-card:#0B1E30;--bg-card-h:#0F2440;--border:rgba(0,200,230,0.10);--border-h:rgba(0,200,230,0.22);--text:#E8F4FF;--muted:#7AAABF;--dim:#2A4A60;--cyan:#00D4FF;--blue:#2D7FF9;--teal:#00BFA5;--purple:#7C4DFF;--green:#1DE9B6;--orange:#FF8C42;--yellow:#FFD740;--red:#FF5370;--indigo:#82B1FF}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{background:var(--bg);color:var(--text);font-family:'Nunito Sans',sans-serif;font-weight:400;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
@@ -24,7 +74,6 @@
     a{text-decoration:none;color:inherit}
     .container{max-width:1080px;margin:0 auto;padding:0 24px}
     section{padding:96px 0}
-
     nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:12px 28px;background:rgba(5,15,26,0.85);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
     .nav-logo{display:flex;align-items:center;gap:10px;font-family:'Nunito',sans-serif;font-weight:800;font-size:1.15rem}
     .nav-icon{width:34px;height:34px;border-radius:8px;overflow:hidden;flex-shrink:0}
@@ -33,7 +82,7 @@
     .lang-btn{padding:5px 13px;border:none;background:transparent;color:var(--muted);font-family:'Nunito',sans-serif;font-weight:800;font-size:.75rem;letter-spacing:.06em;cursor:pointer;border-radius:7px;transition:all .2s}
     .lang-btn:hover{color:var(--text);background:rgba(0,200,230,.09)}
     .lang-btn.active{background:var(--cyan);color:#000}
-
+    @media(max-width:520px){.lang-btn{padding:4px 8px;font-size:.68rem;letter-spacing:.02em}.lang-switcher{padding:2px}}
     #hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:130px 24px 80px;position:relative;overflow:hidden}
     .hero-bg{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(45,114,210,.35) 0%,transparent 70%),radial-gradient(ellipse 60% 50% at 20% 80%,rgba(0,191,165,.18) 0%,transparent 60%),radial-gradient(ellipse 50% 40% at 80% 70%,rgba(0,212,255,.12) 0%,transparent 55%)}
     .hero-grid{position:absolute;inset:0;z-index:0;opacity:.06;background-image:linear-gradient(rgba(0,212,255,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,.6) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(ellipse at center,black 30%,transparent 80%)}
@@ -44,84 +93,76 @@
     .badge-dot{width:6px;height:6px;background:var(--cyan);border-radius:50%;animation:blink 2.2s ease-in-out infinite}
     @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
     h1{font-family:'Nunito',sans-serif;font-size:clamp(3.2rem,9vw,6rem);font-weight:900;letter-spacing:-.02em;background:linear-gradient(140deg,#fff 20%,rgba(180,225,255,.7));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px;animation:fadeUp .7s ease .2s both}
-    .hero-tagline{font-family:'Nunito',sans-serif;font-size:clamp(1rem,2.8vw,1.3rem);font-weight:600;color:var(--muted);margin-bottom:24px;animation:fadeUp .7s ease .3s both}
-    .hero-desc{font-size:1rem;color:var(--muted);line-height:1.75;margin-bottom:40px;animation:fadeUp .7s ease .4s both}
-    .hero-cta{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;background:var(--cyan);border-radius:100px;color:#000;font-family:'Nunito',sans-serif;font-weight:800;font-size:.95rem;animation:fadeUp .7s ease .5s both;transition:opacity .2s;cursor:pointer} .hero-cta:hover{opacity:.88}
+    .hero-tagline{font-family:'Nunito',sans-serif;font-size:clamp(1.2rem,3.5vw,1.8rem);font-weight:800;color:var(--text);margin-bottom:24px;animation:fadeUp .7s ease .3s both}
+    .hero-desc{font-size:1.15rem;color:var(--muted);line-height:1.75;margin-bottom:40px;animation:fadeUp .7s ease .4s both}
+    .hero-cta{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;background:var(--cyan);border-radius:100px;color:#000;font-family:'Nunito',sans-serif;font-weight:800;font-size:.95rem;animation:fadeUp .7s ease .5s both;transition:opacity .2s}
+    .hero-cta:hover{opacity:.88}
     .hero-cta .pill{background:rgba(0,0,0,.15);padding:3px 10px;border-radius:100px;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
     @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
-
     .stats-bar{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:36px 0}
     .stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
     .stat{text-align:center;padding:0 20px;border-right:1px solid var(--border)}
     .stat:last-child{border-right:none}
     .stat-num{font-family:'Nunito',sans-serif;font-size:2.5rem;font-weight:900;color:var(--cyan);display:block;line-height:1;margin-bottom:6px}
     .stat-lbl{font-size:.83rem;color:var(--muted);font-weight:600}
-
     .sec-label{display:inline-block;font-family:'Nunito',sans-serif;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
     .sec-title{font-size:clamp(1.7rem,4vw,2.6rem);font-weight:800;letter-spacing:-.02em;margin-bottom:14px}
-    .sec-sub{font-size:1rem;color:var(--muted);max-width:540px;line-height:1.75}
-
+    .sec-sub{font-size:1.05rem;color:var(--muted);max-width:540px;line-height:1.75}
     .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
     .features-list{display:flex;flex-direction:column;gap:16px;margin-top:32px}
     .feat{display:flex;gap:14px;align-items:flex-start;padding:16px;background:var(--bg-card);border:1px solid var(--border);border-radius:14px;transition:border-color .25s}
     .feat:hover{border-color:var(--border-h)}
     .feat-ico{width:40px;height:40px;border-radius:11px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.15rem;background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.15)}
     .feat h4{font-family:'Nunito',sans-serif;font-size:.9rem;font-weight:800;margin-bottom:3px}
-    .feat p{font-size:.82rem;color:var(--muted);line-height:1.55}
-
+    .feat p{font-size:.92rem;color:var(--muted);line-height:1.6}
     .phone-wrap{display:flex;justify-content:center}
     .phone{width:220px;background:#050A12;border-radius:40px;border:2px solid rgba(0,200,230,.2);overflow:hidden;position:relative;box-shadow:0 32px 72px rgba(0,0,0,.65),0 0 0 1px rgba(255,255,255,.04),inset 0 1px 0 rgba(255,255,255,.06)}
     .phone img{width:100%;display:block}
     .notch{position:absolute;top:8px;left:50%;transform:translateX(-50%);width:84px;height:22px;background:#000;border-radius:11px;z-index:10}
-
     #categories{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-    .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-top:44px}
+    .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:44px}
     .cat-card{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:18px;position:relative;overflow:hidden;transition:all .3s;cursor:default}
     .cat-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--c);border-radius:2px 2px 0 0}
     .cat-card:hover{border-color:var(--c);transform:translateY(-4px);box-shadow:0 12px 36px rgba(0,0,0,.45);background:var(--bg-card)}
-    .cat-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+    .cat-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
     .cat-ico{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);flex-shrink:0}
-    .cat-name{font-family:'Nunito',sans-serif;font-size:.8rem;font-weight:800;color:var(--text);line-height:1.25}
+    .cat-name{font-family:'Nunito',sans-serif;font-size:.82rem;font-weight:800;color:var(--text);line-height:1.25}
     .cat-num{font-family:'Nunito',sans-serif;font-size:1.9rem;font-weight:900;color:var(--c);line-height:1}
     .cat-ex{font-size:.73rem;color:var(--dim);margin-top:3px}
-
+    .cat-desc{font-size:.88rem;color:var(--muted);margin-top:10px;line-height:1.55;border-top:1px solid var(--border);padding-top:10px}
     .sci-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
     .sci-card{background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:22px;transition:all .3s}
     .sci-card:hover{border-color:rgba(0,212,255,.25);background:var(--bg-card-h)}
     .sci-author{font-family:'Nunito',sans-serif;font-size:.95rem;font-weight:800;color:var(--cyan)}
     .sci-year{font-size:.73rem;color:var(--dim);margin-bottom:10px}
     .sci-title{font-family:'Nunito',sans-serif;font-size:.88rem;font-weight:700;color:var(--text);margin-bottom:7px;line-height:1.35}
-    .sci-desc{font-size:.8rem;color:var(--muted);line-height:1.55}
-
+    .sci-desc{font-size:.9rem;color:var(--muted);line-height:1.6}
     .tgt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
     .tgt-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:30px 22px;text-align:center;transition:all .3s}
     .tgt-card:hover{transform:translateY(-5px);border-color:var(--border-h)}
     .tgt-em{font-size:2.4rem;display:block;margin-bottom:14px}
     .tgt-title{font-family:'Nunito',sans-serif;font-size:1.05rem;font-weight:800;margin-bottom:10px}
-    .tgt-desc{font-size:.86rem;color:var(--muted);line-height:1.6}
-
+    .tgt-desc{font-size:.95rem;color:var(--muted);line-height:1.65}
     #features{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
     .diff-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:44px}
     .diff-item{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:22px;display:flex;gap:16px;align-items:flex-start;transition:all .3s}
     .diff-item:hover{border-color:rgba(0,212,255,.22);background:var(--bg-card)}
     .diff-ico{width:44px;height:44px;border-radius:12px;flex-shrink:0;background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.18);display:flex;align-items:center;justify-content:center;font-size:1.2rem}
     .diff-item h4{font-family:'Nunito',sans-serif;font-size:.92rem;font-weight:800;margin-bottom:5px}
-    .diff-item p{font-size:.82rem;color:var(--muted);line-height:1.55}
-
+    .diff-item p{font-size:.92rem;color:var(--muted);line-height:1.6}
     .screens-row{display:flex;gap:24px;justify-content:center;margin-top:56px;flex-wrap:wrap;align-items:flex-end}
     .screen-wrap{display:flex;flex-direction:column;align-items:center;gap:12px}
     .screen-lbl{font-family:'Nunito',sans-serif;font-size:.75rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
     .screen-frame{border-radius:36px;border:2px solid rgba(0,200,230,.18);overflow:hidden;position:relative;box-shadow:0 28px 60px rgba(0,0,0,.65),0 0 0 1px rgba(255,255,255,.04)}
     .screen-notch{position:absolute;top:8px;left:50%;transform:translateX(-50%);width:74px;height:20px;background:#000;border-radius:10px;z-index:10}
     .screen-frame img{width:100%;display:block}
-
     #cta{text-align:center;background:linear-gradient(160deg,rgba(45,114,210,.25) 0%,rgba(0,191,165,.18) 100%);border-top:1px solid rgba(45,114,210,.3)}
     .cta-pill{display:inline-block;padding:7px 18px;background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.25);border-radius:100px;font-size:.76rem;color:var(--cyan);font-family:'Nunito',sans-serif;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:22px}
     .cta-title{font-size:clamp(2rem,5vw,3rem);font-weight:900;letter-spacing:-.02em;margin-bottom:14px}
-    .cta-sub{font-size:1rem;color:var(--muted);margin-bottom:36px;max-width:460px;margin-left:auto;margin-right:auto;line-height:1.75}
-    .app-store-btn{display:inline-flex;align-items:center;gap:14px;padding:16px 32px;background:var(--cyan);border-radius:16px;color:#000;font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;transition:opacity .2s} .app-store-btn:hover{opacity:.88}
+    .cta-sub{font-size:1rem;color:var(--muted);margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.75}
+    .app-store-btn{display:inline-flex;align-items:center;gap:14px;padding:16px 32px;background:var(--cyan);border-radius:16px;color:#000;font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;transition:opacity .2s}
+    .app-store-btn:hover{opacity:.88}
     .app-store-btn .tag{background:rgba(0,0,0,.15);padding:3px 10px;border-radius:100px;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
-
     footer{background:#030A14;border-top:1px solid var(--border);padding:48px 0;text-align:center}
     .footer-logo{display:flex;align-items:center;justify-content:center;gap:10px;font-family:'Nunito',sans-serif;font-weight:900;font-size:1.2rem;margin-bottom:18px}
     .footer-logo-icon{width:28px;height:28px;border-radius:7px;overflow:hidden}
@@ -130,32 +171,14 @@
     .footer-links a{font-size:.86rem;color:var(--muted);transition:color .2s;font-weight:600}
     .footer-links a:hover{color:var(--cyan)}
     .footer-copy{font-size:.76rem;color:var(--dim)}
-
     .glow-divider{height:1px;width:100%;background:linear-gradient(90deg,transparent,var(--teal),var(--cyan),var(--blue),transparent);opacity:.3}
-
     .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
     .reveal.in{opacity:1;transform:none}
     .reveal-d1{transition-delay:.1s}
     .reveal-d2{transition-delay:.2s}
     .reveal-d3{transition-delay:.3s}
-
-    @media(max-width:520px){.lang-btn{padding:4px 8px;font-size:.68rem;letter-spacing:.02em}.lang-switcher{padding:2px}}
     @media(max-width:900px){.sci-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:700px){
-      .stats-grid{grid-template-columns:repeat(2,1fr)}
-      .stat{border-right:none;border-bottom:1px solid var(--border);padding:16px}
-      .stat:nth-child(2n){border-left:1px solid var(--border)}
-      .stat:nth-child(3),.stat:nth-child(4){border-bottom:none}
-      .about-grid{grid-template-columns:1fr;gap:40px}
-      .phone-wrap{display:none}
-      .cat-grid{grid-template-columns:repeat(2,1fr)}
-      .sci-grid{grid-template-columns:1fr}
-      .tgt-grid{grid-template-columns:1fr}
-      .diff-grid{grid-template-columns:1fr}
-      section{padding:64px 0}
-      .screens-row{gap:14px}
-      .screen-frame{width:140px!important}
-    }
+    @media(max-width:700px){.stats-grid{grid-template-columns:repeat(2,1fr)}.stat{border-right:none;border-bottom:1px solid var(--border);padding:16px}.stat:nth-child(2n){border-left:1px solid var(--border)}.stat:nth-child(3),.stat:nth-child(4){border-bottom:none}.about-grid{grid-template-columns:1fr;gap:40px}.phone-wrap{display:none}.cat-grid{grid-template-columns:repeat(2,1fr)}.sci-grid{grid-template-columns:1fr}.tgt-grid{grid-template-columns:1fr}.diff-grid{grid-template-columns:1fr}section{padding:64px 0}.screens-row{gap:14px}.screen-frame{width:140px!important}}
   </style>
 </head>
 <body>
@@ -184,7 +207,7 @@
     <p class="hero-tagline" data-i18n="hero.tagline"></p>
     <p class="hero-desc" data-i18n="hero.desc"></p>
     <a class="hero-cta" href="https://apps.apple.com/us/app/allegramente/id6761313217" target="_blank" rel="noopener">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12l4 4 4-4"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
       <span data-i18n="hero.cta_label"></span>
       <span class="pill" data-i18n="hero.cta_pill"></span>
     </a>
@@ -290,8 +313,8 @@
     <h2 class="cta-title reveal" data-i18n="cta.title"></h2>
     <p class="cta-sub reveal reveal-d1" data-i18n="cta.sub"></p>
     <div class="reveal reveal-d2">
-      <div class="app-badge">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      <a class="app-store-btn" href="https://apps.apple.com/us/app/allegramente/id6761313217" target="_blank" rel="noopener">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
         <span data-i18n="cta.badge_text"></span>
         <span class="tag" data-i18n="cta.badge_tag"></span>
       </a>
@@ -316,73 +339,73 @@
 <script>
 const T = {
   "it": {
-    "hero.badge": "App iOS · Disponibile ora",
-    "hero.tagline": "Allena la tua mente ogni giorno",
-    "hero.desc": "58 esercizi cognitivi sviluppati sulla base di paradigmi sperimentali verificati, progettati per stimolare memoria, attenzione, funzioni esecutive e capacità di elaborazione delle informazioni.",
+    "hero.badge": "App iOS \u00b7 Disponibile ora",
+    "hero.tagline": "Allenamento cognitivo serio. Ogni giorno.",
+    "hero.desc": "58 esercizi basati su paradigmi scientifici per allenare memoria, attenzione e funzioni esecutive. Gratis, senza abbonamenti, senza tracciamento.",
     "hero.cta_label": "Scarica su App Store",
     "hero.cta_pill": "Gratis",
     "stats.exercises": "esercizi cognitivi",
-    "stats.categories": "categorie cognitive",
-    "stats.levels": "livelli di difficoltà",
-    "stats.platform": "per iPhone · iOS",
-    "about.label": "Cos’è AllegraMente",
-    "about.title": "Scienza, non intrattenimento",
-    "about.sub": "Ogni esercizio di AllegraMente si basa su studi scientifici riconosciuti e pubblicati da esperti del settore, considerati punti di riferimento nella neuropsicologia cognitiva.",
-    "about.f1.title": "Paradigmi validati",
-    "about.f1.desc": "Ogni esercizio deriva da studi sperimentali replicati: da Ebbinghaus (1885) al Dual N-Back di Jaeggi et al. (2008, PNAS).",
-    "about.f2.title": "11 aree cognitive distinte",
-    "about.f2.desc": "Copertura completa: memoria di lavoro, visuo-spaziale, verbale, episodica, prospettica, di contesto, implicita, attenzione, metamemoria e tecniche mnemoniche.",
-    "about.f3.title": "Report PDF esportabile",
-    "about.f3.desc": "Statistiche, progressi per categoria e achievement esportabili in PDF per monitorare la crescita nel tempo.",
+    "stats.categories": "aree cognitive",
+    "stats.levels": "livelli di difficolt\u00e0",
+    "stats.platform": "per iPhone \u00b7 iOS",
+    "about.label": "Cos\u2019\u00e8 AllegraMente",
+    "about.title": "Non \u00e8 pensata per distrarti. \u00c8 pensata per allenarti.",
+    "about.sub": "AllegraMente nasce da un\u2019idea semplice: l\u2019allenamento mentale merita pi\u00f9 rigore e meno rumore. Non cerca di trattenerti con meccaniche compulsive o ricompense vuote. Ti offre uno strumento pulito, progressivo e fondato su basi serie della neuropsicologia cognitiva.",
+    "about.f1.title": "Scienza applicata, non marketing",
+    "about.f1.desc": "Ogni esercizio ha una fonte: da Ebbinghaus (1885) al Dual N-Back di Jaeggi et al. (2008, PNAS). Non promesse generiche, ma paradigmi che la ricerca ha studiato e replicato nel tempo.",
+    "about.f2.title": "11 aree cognitive, ognuna allenata in modo specifico",
+    "about.f2.desc": "Ricordare un nome, mantenere il focus, orientarsi nello spazio, richiamare un evento: non sono la stessa abilit\u00e0. AllegraMente le distingue e le allena in modo specifico.",
+    "about.f3.title": "Progressi che si vedono",
+    "about.f3.desc": "Statistiche per categoria, grafici di andamento e report PDF esportabile. Allenarti senza misurarti \u00e8 solo un\u2019abitudine. AllegraMente ti mostra dove stai crescendo davvero.",
     "cat.label": "Aree cognitive",
-    "cat.title": "11 aree, copertura completa",
-    "cat.sub": "AllegraMente copre l’intero spettro delle funzioni mnemoniche e attentive studiate dalla neuropsicologia moderna.",
+    "cat.title": "11 aree, ognuna con un ruolo preciso",
+    "cat.sub": "La mente non \u00e8 una sola cosa. Ricordare un nome, mantenersi concentrati, orientarsi nello spazio, richiamare un evento: sono abilit\u00e0 diverse. AllegraMente le allena tutte.",
     "sci.label": "Fondamento scientifico",
     "sci.title": "Costruito sulla ricerca",
     "sci.sub": "Ogni esercizio porta la firma di ricercatori che hanno plasmato la nostra comprensione della memoria negli ultimi 150 anni.",
     "tgt.label": "A chi si rivolge",
     "tgt.title": "Per chiunque voglia allenarsi seriamente",
-    "tgt.sub": "Dal giovane studente all’anziano che vuole mantenere la mente in forma: AllegraMente si adatta a ogni livello.",
-    "feat.label": "Funzionalità",
-    "feat.title": "Tutto quello che serve, niente di superfluo",
-    "feat.sub": "AllegraMente è completa, senza abbonamenti e rispetta la tua privacy al 100%.",
+    "tgt.sub": "Dal giovane studente all\u2019anziano che vuole mantenere la mente in forma: AllegraMente si adatta a ogni livello.",
+    "feat.label": "Funzionalit\u00e0",
+    "feat.title": "Tutto quello che serve. Nulla che distragga.",
+    "feat.sub": "AllegraMente \u00e8 completa, senza abbonamenti e rispetta la tua privacy al 100%.",
     "sc.label": "Schermate",
     "sc.title": "Elegante, intuitiva, efficace",
-    "sc.sub": "Un’interfaccia dark progettata per non distrarre — ogni elemento al servizio dell’allenamento cognitivo.",
+    "sc.sub": "Un\u2019interfaccia dark progettata per non distrarre \u2014 ogni elemento al servizio dell\u2019allenamento cognitivo.",
     "sc.lbl1": "Home",
     "sc.lbl2": "Mappa Cognitiva",
     "sc.lbl3": "Progressi",
     "sc.lbl4": "Risultati",
     "cta.pill": "Disponibile ora su App Store",
     "cta.title": "Iniziamo?",
-    "cta.sub": "AllegraMente è disponibile gratuitamente su App Store. Scaricala adesso e inizia ad allenarti.",
-    "cta.badge_text": "App Store · iPhone",
+    "cta.sub": "AllegraMente \u00e8 gratuita, essenziale e costruita su basi serie. Scaricala e inizia un allenamento cognitivo quotidiano, senza rumore, senza abbonamenti, senza compromessi.",
+    "cta.badge_text": "App Store \u00b7 iPhone",
     "cta.badge_tag": "Scarica gratis",
     "footer.support": "Supporto",
-    "footer.copy": "© 2026 AllegraMente · Tutti i diritti riservati"
+    "footer.copy": "\u00a9 2026 AllegraMente \u00b7 Tutti i diritti riservati"
   },
   "en": {
-    "hero.badge": "iOS App · Available now",
-    "hero.tagline": "Train your mind every day",
-    "hero.desc": "58 cognitive exercises developed on the basis of verified experimental paradigms, designed to stimulate memory, attention, executive functions and information processing skills.",
+    "hero.badge": "iOS App \u00b7 Available now",
+    "hero.tagline": "Serious cognitive training. Every day.",
+    "hero.desc": "58 exercises grounded in scientific paradigms to train memory, attention and executive functions. Free, no subscriptions, no tracking.",
     "hero.cta_label": "Download on App Store",
     "hero.cta_pill": "Free",
     "stats.exercises": "cognitive exercises",
-    "stats.categories": "cognitive categories",
+    "stats.categories": "cognitive areas",
     "stats.levels": "difficulty levels",
-    "stats.platform": "for iPhone · iOS",
+    "stats.platform": "for iPhone \u00b7 iOS",
     "about.label": "About AllegraMente",
-    "about.title": "Science, not entertainment",
-    "about.sub": "Every exercise in AllegraMente is based on recognised scientific studies published by field experts, considered benchmarks in cognitive neuropsychology.",
-    "about.f1.title": "Validated paradigms",
-    "about.f1.desc": "Each exercise derives from replicated experimental studies: from Ebbinghaus (1885) to the Dual N-Back by Jaeggi et al. (2008, PNAS).",
-    "about.f2.title": "11 distinct cognitive areas",
-    "about.f2.desc": "Complete coverage: working memory, visuospatial, verbal, episodic, prospective, context, implicit memory, attention, metamemory and mnemonic techniques.",
-    "about.f3.title": "Exportable PDF report",
-    "about.f3.desc": "Statistics, per-category progress and achievements exportable as PDF to track growth over time.",
+    "about.title": "Not designed to distract you. Designed to train you.",
+    "about.sub": "AllegraMente is built on a simple idea: mental training deserves more rigour and less noise. It does not try to hook you with compulsive mechanics or empty rewards. It offers a clean, progressive tool grounded in serious cognitive neuropsychology.",
+    "about.f1.title": "Applied science, not marketing",
+    "about.f1.desc": "Every exercise has a source: from Ebbinghaus (1885) to the Dual N-Back by Jaeggi et al. (2008, PNAS). Not vague promises, but paradigms that research has studied and replicated over time.",
+    "about.f2.title": "11 cognitive areas, each trained specifically",
+    "about.f2.desc": "Remembering a name, staying focused, navigating space, recalling an event: these are not the same skill. AllegraMente distinguishes them and trains each one specifically.",
+    "about.f3.title": "Progress you can actually see",
+    "about.f3.desc": "Per-category stats, trend charts and an exportable PDF report. Training without measuring is just a habit. AllegraMente shows you where you are genuinely growing.",
     "cat.label": "Cognitive areas",
-    "cat.title": "11 areas, complete coverage",
-    "cat.sub": "AllegraMente covers the entire spectrum of mnemonic and attentional functions studied by modern neuropsychology.",
+    "cat.title": "11 areas, each with a precise role",
+    "cat.sub": "The mind is not a single thing. Remembering a name, staying focused, navigating space, recalling an event: these are different skills. AllegraMente trains them all.",
     "sci.label": "Scientific foundation",
     "sci.title": "Built on research",
     "sci.sub": "Every exercise carries the signature of researchers who shaped our understanding of memory over the last 150 years.",
@@ -390,234 +413,637 @@ const T = {
     "tgt.title": "For anyone who wants to train seriously",
     "tgt.sub": "From a young student to an older adult keeping their mind sharp: AllegraMente adapts to every level.",
     "feat.label": "Features",
-    "feat.title": "Everything you need, nothing superfluous",
+    "feat.title": "Everything you need. Nothing that distracts.",
     "feat.sub": "AllegraMente is complete, subscription-free and respects your privacy 100%.",
     "sc.label": "Screenshots",
     "sc.title": "Elegant, intuitive, effective",
-    "sc.sub": "A dark interface designed not to distract — every element in service of cognitive training.",
+    "sc.sub": "A dark interface designed not to distract \u2014 every element in service of cognitive training.",
     "sc.lbl1": "Home",
     "sc.lbl2": "Cognitive Map",
     "sc.lbl3": "Progress",
     "sc.lbl4": "Results",
     "cta.pill": "Now available on App Store",
     "cta.title": "Shall we begin?",
-    "cta.sub": "AllegraMente is now available for free on the App Store. Download it and start training.",
-    "cta.badge_text": "App Store · iPhone",
+    "cta.sub": "AllegraMente is free, essential and built on serious foundations. Download it and start a daily cognitive training routine \u2014 no noise, no subscriptions, no compromises.",
+    "cta.badge_text": "App Store \u00b7 iPhone",
     "cta.badge_tag": "Download free",
     "footer.support": "Support",
-    "footer.copy": "© 2026 AllegraMente · All rights reserved"
+    "footer.copy": "\u00a9 2026 AllegraMente \u00b7 All rights reserved"
   },
   "es": {
-    "hero.badge": "App iOS · Disponible ahora",
-    "hero.tagline": "Entrena tu mente cada día",
-    "hero.desc": "58 ejercicios cognitivos desarrollados sobre la base de paradigmas experimentales verificados, diseñados para estimular la memoria, la atención, las funciones ejecutivas y la capacidad de procesamiento de la información.",
+    "hero.badge": "App iOS \u00b7 Disponible ahora",
+    "hero.tagline": "Entrenamiento cognitivo serio. Cada d\u00eda.",
+    "hero.desc": "58 ejercicios basados en paradigmas cient\u00edficos para entrenar memoria, atenci\u00f3n y funciones ejecutivas. Gratis, sin suscripciones, sin rastreo.",
     "hero.cta_label": "Descargar en App Store",
     "hero.cta_pill": "Gratis",
     "stats.exercises": "ejercicios cognitivos",
-    "stats.categories": "categorías cognitivas",
+    "stats.categories": "\u00e1reas cognitivas",
     "stats.levels": "niveles de dificultad",
-    "stats.platform": "para iPhone · iOS",
+    "stats.platform": "para iPhone \u00b7 iOS",
     "about.label": "Sobre AllegraMente",
-    "about.title": "Ciencia, no entretenimiento",
-    "about.sub": "Cada ejercicio de AllegraMente se basa en estudios científicos reconocidos y publicados por expertos del sector, considerados referencias en neuropsicología cognitiva.",
-    "about.f1.title": "Paradigmas validados",
-    "about.f1.desc": "Cada ejercicio deriva de estudios experimentales replicados: desde Ebbinghaus (1885) hasta el Dual N-Back de Jaeggi et al. (2008, PNAS).",
-    "about.f2.title": "11 áreas cognitivas distintas",
-    "about.f2.desc": "Cobertura completa: memoria de trabajo, visuoespacial, verbal, episódica, prospectiva, de contexto, implícita, atención, metamemoria y técnicas mnemónicas.",
-    "about.f3.title": "Informe PDF exportable",
-    "about.f3.desc": "Estadísticas, progreso por categoría y logros exportables en PDF para monitorear el avance con el tiempo.",
-    "cat.label": "Áreas cognitivas",
-    "cat.title": "11 áreas, cobertura completa",
-    "cat.sub": "AllegraMente cubre todo el espectro de funciones mnémicas y atencionales estudiadas por la neuropsicología moderna.",
-    "sci.label": "Fundamento científico",
-    "sci.title": "Construido sobre la investigación",
-    "sci.sub": "Cada ejercicio lleva la firma de investigadores que moldearon nuestra comprensión de la memoria en los últimos 150 años.",
-    "tgt.label": "Para quién es",
+    "about.title": "No est\u00e1 dise\u00f1ada para distraerte. Est\u00e1 dise\u00f1ada para entrenarte.",
+    "about.sub": "AllegraMente nace de una idea simple: el entrenamiento mental merece m\u00e1s rigor y menos ruido. No busca retenerte con mec\u00e1nicas compulsivas ni recompensas vac\u00edas. Te ofrece una herramienta limpia, progresiva y fundamentada en la neuropsicolog\u00eda cognitiva.",
+    "about.f1.title": "Ciencia aplicada, no marketing",
+    "about.f1.desc": "Cada ejercicio tiene una fuente: de Ebbinghaus (1885) al Dual N-Back de Jaeggi et al. (2008, PNAS). No promesas vagas, sino paradigmas que la investigaci\u00f3n ha estudiado y replicado.",
+    "about.f2.title": "11 \u00e1reas cognitivas, cada una entrenada espec\u00edficamente",
+    "about.f2.desc": "Recordar un nombre, mantener el foco, orientarse en el espacio, evocar un evento: no son la misma habilidad. AllegraMente las distingue y las entrena de forma espec\u00edfica.",
+    "about.f3.title": "Progreso que se puede ver",
+    "about.f3.desc": "Estad\u00edsticas por categor\u00eda, gr\u00e1ficos de evoluci\u00f3n e informe PDF exportable. Entrenarte sin medir es solo un h\u00e1bito. AllegraMente te muestra d\u00f3nde est\u00e1s creciendo de verdad.",
+    "cat.label": "\u00c1reas cognitivas",
+    "cat.title": "11 \u00e1reas, cada una con un papel preciso",
+    "cat.sub": "La mente no es una sola cosa. Recordar un nombre, mantenerse concentrado, orientarse en el espacio, evocar un evento: son habilidades diferentes. AllegraMente las entrena todas.",
+    "sci.label": "Fundamento cient\u00edfico",
+    "sci.title": "Construido sobre la investigaci\u00f3n",
+    "sci.sub": "Cada ejercicio lleva la firma de investigadores que moldearon nuestra comprensi\u00f3n de la memoria en los \u00faltimos 150 a\u00f1os.",
+    "tgt.label": "Para qui\u00e9n es",
     "tgt.title": "Para quien quiere entrenarse en serio",
     "tgt.sub": "Desde el joven estudiante hasta el adulto mayor que quiere mantener la mente activa: AllegraMente se adapta a cada nivel.",
-    "feat.label": "Características",
-    "feat.title": "Todo lo necesario, nada superfluo",
+    "feat.label": "Caracter\u00edsticas",
+    "feat.title": "Todo lo necesario. Nada que distraiga.",
     "feat.sub": "AllegraMente es completa, sin suscripciones y respeta tu privacidad al 100%.",
     "sc.label": "Capturas",
     "sc.title": "Elegante, intuitiva, eficaz",
-    "sc.sub": "Una interfaz oscura diseñada para no distraer — cada elemento al servicio del entrenamiento cognitivo.",
+    "sc.sub": "Una interfaz oscura dise\u00f1ada para no distraer \u2014 cada elemento al servicio del entrenamiento cognitivo.",
     "sc.lbl1": "Inicio",
     "sc.lbl2": "Mapa Cognitivo",
     "sc.lbl3": "Progreso",
     "sc.lbl4": "Resultados",
     "cta.pill": "Disponible ahora en App Store",
-    "cta.title": "¿Empezamos?",
-    "cta.sub": "AllegraMente ya está disponible gratis en la App Store. Descárgala y empieza a entrenar.",
-    "cta.badge_text": "App Store · iPhone",
+    "cta.title": "\u00bfEmpezamos?",
+    "cta.sub": "AllegraMente es gratuita, esencial y construida sobre bases serias. Desc\u00e1rgala y comienza un entrenamiento cognitivo diario, sin ruido, sin suscripciones, sin compromisos.",
+    "cta.badge_text": "App Store \u00b7 iPhone",
     "cta.badge_tag": "Descargar gratis",
     "footer.support": "Soporte",
-    "footer.copy": "© 2026 AllegraMente · Todos los derechos reservados"
+    "footer.copy": "\u00a9 2026 AllegraMente \u00b7 Todos los derechos reservados"
   },
   "fr": {
-    "hero.badge": "App iOS · Disponible maintenant",
-    "hero.tagline": "Entraînez votre esprit chaque jour",
-    "hero.desc": "58 exercices cognitifs développés sur la base de paradigmes expérimentaux vérifiés, conçus pour stimuler la mémoire, l’attention, les fonctions exécutives et les capacités de traitement de l’information.",
-    "hero.cta_label": "Télécharger sur App Store",
+    "hero.badge": "App iOS \u00b7 Disponible maintenant",
+    "hero.tagline": "Entra\u00eenement cognitif s\u00e9rieux. Chaque jour.",
+    "hero.desc": "58 exercices fond\u00e9s sur des paradigmes scientifiques pour entra\u00eener la m\u00e9moire, l\u2019attention et les fonctions ex\u00e9cutives. Gratuit, sans abonnement, sans tra\u00e7age.",
+    "hero.cta_label": "T\u00e9l\u00e9charger sur App Store",
     "hero.cta_pill": "Gratuit",
     "stats.exercises": "exercices cognitifs",
     "stats.categories": "domaines cognitifs",
-    "stats.levels": "niveaux de difficulté",
-    "stats.platform": "pour iPhone · iOS",
-    "about.label": "Qu’est-ce qu’AllegraMente",
-    "about.title": "Science, pas divertissement",
-    "about.sub": "Chaque exercice d’AllegraMente repose sur des études scientifiques reconnues et publiées par des experts du domaine, considérées comme des références en neuropsychologie cognitive.",
-    "about.f1.title": "Paradigmes validés",
-    "about.f1.desc": "Chaque exercice est tiré d’études expérimentales répliquées : d’Ebbinghaus (1885) au Double N-Back de Jaeggi et al. (2008, PNAS).",
-    "about.f2.title": "11 domaines cognitifs distincts",
-    "about.f2.desc": "Couverture complète : mémoire de travail, visuospatiale, verbale, épisodique, prospective, contextuelle, implicite, attention, métamémoire et techniques mnémotechniques.",
-    "about.f3.title": "Rapport PDF exportable",
-    "about.f3.desc": "Statistiques, progression par domaine et réalisations exportables en PDF pour suivre votre évolution dans le temps.",
+    "stats.levels": "niveaux de difficult\u00e9",
+    "stats.platform": "pour iPhone \u00b7 iOS",
+    "about.label": "Qu\u2019est-ce qu\u2019AllegraMente",
+    "about.title": "Pas con\u00e7ue pour vous distraire. Con\u00e7ue pour vous entra\u00eener.",
+    "about.sub": "AllegraMente est n\u00e9e d\u2019une id\u00e9e simple: l\u2019entra\u00eenement mental m\u00e9rite plus de rigueur et moins de bruit. Elle ne cherche pas \u00e0 vous retenir avec des m\u00e9caniques compulsives ou des r\u00e9compenses vides. Elle vous offre un outil propre, progressif et fond\u00e9 sur des bases s\u00e9rieuses de neuropsychologie cognitive.",
+    "about.f1.title": "Science appliqu\u00e9e, pas marketing",
+    "about.f1.desc": "Chaque exercice a une source: d\u2019Ebbinghaus (1885) au Double N-Back de Jaeggi et al. (2008, PNAS). Pas de promesses vagues, mais des paradigmes que la recherche a \u00e9tudi\u00e9s et r\u00e9pliqu\u00e9s.",
+    "about.f2.title": "11 domaines cognitifs, chacun entra\u00een\u00e9 sp\u00e9cifiquement",
+    "about.f2.desc": "Se souvenir d\u2019un nom, rester concentr\u00e9, s\u2019orienter dans l\u2019espace, rappeler un \u00e9v\u00e9nement: ce ne sont pas les m\u00eames aptitudes. AllegraMente les distingue et les entra\u00eene sp\u00e9cifiquement.",
+    "about.f3.title": "Des progr\u00e8s que vous pouvez voir",
+    "about.f3.desc": "Statistiques par domaine, graphiques d\u2019\u00e9volution et rapport PDF exportable. S\u2019entra\u00eener sans mesurer n\u2019est qu\u2019une habitude. AllegraMente vous montre o\u00f9 vous progressez vraiment.",
     "cat.label": "Domaines cognitifs",
-    "cat.title": "11 domaines, couverture complète",
-    "cat.sub": "AllegraMente couvre tout le spectre des fonctions mnésiques et attentionnelles étudiées par la neuropsychologie moderne.",
+    "cat.title": "11 domaines, chacun avec un r\u00f4le pr\u00e9cis",
+    "cat.sub": "L\u2019esprit n\u2019est pas une seule chose. Se souvenir d\u2019un nom, rester concentr\u00e9, s\u2019orienter, rappeler un \u00e9v\u00e9nement: ce sont des comp\u00e9tences diff\u00e9rentes. AllegraMente les entra\u00eene toutes.",
     "sci.label": "Fondement scientifique",
     "sci.title": "Construit sur la recherche",
-    "sci.sub": "Chaque exercice porte la signature de chercheurs qui ont façonné notre compréhension de la mémoire au cours des 150 dernières années.",
+    "sci.sub": "Chaque exercice porte la signature de chercheurs qui ont fa\u00e7onn\u00e9 notre compr\u00e9hension de la m\u00e9moire au cours des 150 derni\u00e8res ann\u00e9es.",
     "tgt.label": "Pour qui",
-    "tgt.title": "Pour quiconque veut s’entraîner sérieusement",
-    "tgt.sub": "Du jeune étudiant à la personne âgée qui veut garder l’esprit alerte : AllegraMente s’adapte à chaque niveau.",
-    "feat.label": "Fonctionnalités",
-    "feat.title": "Tout ce qu’il faut, rien de superflu",
-    "feat.sub": "AllegraMente est complète, sans abonnement et respecte votre vie privée à 100 %.",
-    "sc.label": "Captures d’écran",
-    "sc.title": "Élégante, intuitive, efficace",
-    "sc.sub": "Une interface sombre conçue pour ne pas distraire — chaque élément au service de l’entraînement cognitif.",
+    "tgt.title": "Pour quiconque veut s\u2019entra\u00eener s\u00e9rieusement",
+    "tgt.sub": "Du jeune \u00e9tudiant \u00e0 la personne \u00e2g\u00e9e qui veut garder l\u2019esprit alerte: AllegraMente s\u2019adapte \u00e0 chaque niveau.",
+    "feat.label": "Fonctionnalit\u00e9s",
+    "feat.title": "Tout ce qu\u2019il faut. Rien qui ne distraie.",
+    "feat.sub": "AllegraMente est compl\u00e8te, sans abonnement et respecte votre vie priv\u00e9e \u00e0 100%.",
+    "sc.label": "Captures d\u2019\u00e9cran",
+    "sc.title": "\u00c9l\u00e9gante, intuitive, efficace",
+    "sc.sub": "Une interface sombre con\u00e7ue pour ne pas distraire \u2014 chaque \u00e9l\u00e9ment au service de l\u2019entra\u00eenement cognitif.",
     "sc.lbl1": "Accueil",
     "sc.lbl2": "Carte Cognitive",
     "sc.lbl3": "Progression",
-    "sc.lbl4": "Résultats",
+    "sc.lbl4": "R\u00e9sultats",
     "cta.pill": "Disponible sur App Store",
-    "cta.title": "On commence ?",
-    "cta.sub": "AllegraMente est disponible gratuitement sur l’App Store. Téléchargez-la maintenant et commencez à vous entraîner.",
-    "cta.badge_text": "App Store · iPhone",
-    "cta.badge_tag": "Télécharger gratuitement",
+    "cta.title": "On commence\u00a0?",
+    "cta.sub": "AllegraMente est gratuite, essentielle et construite sur des bases s\u00e9rieuses. T\u00e9l\u00e9chargez-la et commencez un entra\u00eenement cognitif quotidien, sans bruit, sans abonnement, sans compromis.",
+    "cta.badge_text": "App Store \u00b7 iPhone",
+    "cta.badge_tag": "T\u00e9l\u00e9charger gratuitement",
     "footer.support": "Support",
-    "footer.copy": "© 2026 AllegraMente · Tous droits réservés"
+    "footer.copy": "\u00a9 2026 AllegraMente \u00b7 Tous droits r\u00e9serv\u00e9s"
   },
   "de": {
-    "hero.badge": "iOS App · Jetzt verfügbar",
-    "hero.tagline": "Trainiere deinen Geist jeden Tag",
-    "hero.desc": "58 kognitive Übungen, entwickelt auf der Grundlage verifizierter experimenteller Paradigmen, um Gedächtnis, Aufmerksamkeit, exekutive Funktionen und Informationsverarbeitungsfähigkeiten zu stimulieren.",
+    "hero.badge": "iOS App \u00b7 Jetzt verf\u00fcgbar",
+    "hero.tagline": "Ernsthaftes kognitives Training. Jeden Tag.",
+    "hero.desc": "58 \u00dcbungen auf Basis wissenschaftlicher Paradigmen zum Training von Ged\u00e4chtnis, Aufmerksamkeit und exekutiven Funktionen. Kostenlos, ohne Abonnement, ohne Tracking.",
     "hero.cta_label": "Im App Store laden",
     "hero.cta_pill": "Kostenlos",
-    "stats.exercises": "kognitive Übungen",
+    "stats.exercises": "kognitive \u00dcbungen",
     "stats.categories": "kognitive Bereiche",
     "stats.levels": "Schwierigkeitsstufen",
-    "stats.platform": "für iPhone · iOS",
+    "stats.platform": "f\u00fcr iPhone \u00b7 iOS",
     "about.label": "Was ist AllegraMente",
-    "about.title": "Wissenschaft, kein Entertainment",
-    "about.sub": "Jede Übung in AllegraMente basiert auf anerkannten wissenschaftlichen Studien, die von Fachexperten veröffentlicht wurden und als Referenzpunkte in der kognitiven Neuropsychologie gelten.",
-    "about.f1.title": "Validierte Paradigmen",
-    "about.f1.desc": "Jede Übung stammt aus replizierten experimentellen Studien: von Ebbinghaus (1885) bis zum Dual N-Back von Jaeggi et al. (2008, PNAS).",
-    "about.f2.title": "11 kognitive Bereiche",
-    "about.f2.desc": "Vollständige Abdeckung: Arbeitsgedächtnis, visuospatiales, verbales, episodisches, prospektives, Kontextgedächtnis, implizites Gedächtnis, Aufmerksamkeit, Metapedächtnis und mnemonische Techniken.",
-    "about.f3.title": "Exportierbarer PDF-Bericht",
-    "about.f3.desc": "Statistiken, Fortschritt pro Bereich und Erfolge als PDF exportierbar, um die eigene Entwicklung über die Zeit zu verfolgen.",
+    "about.title": "Nicht entworfen, um dich abzulenken. Entworfen, um dich zu trainieren.",
+    "about.sub": "AllegraMente entstand aus einer einfachen Idee: Mentales Training verdient mehr Strenge und weniger L\u00e4rm. Es versucht nicht, dich mit zwanghaften Mechaniken oder leeren Belohnungen zu fesseln. Es bietet dir ein sauberes, progressives Werkzeug auf seri\u00f6sen Grundlagen der kognitiven Neuropsychologie.",
+    "about.f1.title": "Angewandte Wissenschaft, kein Marketing",
+    "about.f1.desc": "Jede \u00dcbung hat eine Quelle: von Ebbinghaus (1885) bis zum Dual N-Back von Jaeggi et al. (2008, PNAS). Keine vagen Versprechen, sondern Paradigmen, die die Forschung studiert und repliziert hat.",
+    "about.f2.title": "11 kognitive Bereiche, jeder spezifisch trainiert",
+    "about.f2.desc": "Einen Namen erinnern, fokussiert bleiben, sich im Raum orientieren, ein Ereignis abrufen: das sind nicht dieselben F\u00e4higkeiten. AllegraMente unterscheidet sie und trainiert jede spezifisch.",
+    "about.f3.title": "Fortschritt, den man sehen kann",
+    "about.f3.desc": "Statistiken pro Bereich, Trendgraphen und exportierbarer PDF-Bericht. Training ohne Messen ist nur Gewohnheit. AllegraMente zeigt dir, wo du wirklich w\u00e4chst.",
     "cat.label": "Kognitive Bereiche",
-    "cat.title": "11 Bereiche, vollständige Abdeckung",
-    "cat.sub": "AllegraMente deckt das gesamte Spektrum der mnästischen und Aufmerksamkeitsfunktionen ab, die von der modernen Neuropsychologie erforscht werden.",
+    "cat.title": "11 Bereiche, jeder mit einer pr\u00e4zisen Rolle",
+    "cat.sub": "Der Geist ist nicht eine einzige Sache. Einen Namen erinnern, konzentriert bleiben, sich orientieren, ein Ereignis abrufen: das sind verschiedene F\u00e4higkeiten. AllegraMente trainiert sie alle.",
     "sci.label": "Wissenschaftliche Grundlage",
     "sci.title": "Auf Forschung aufgebaut",
-    "sci.sub": "Jede Übung trägt die Handschrift von Forschern, die unser Verständnis des Gedächtnisses in den letzten 150 Jahren geprägt haben.",
-    "tgt.label": "Für wen",
-    "tgt.title": "Für alle, die ernsthaft trainieren wollen",
-    "tgt.sub": "Vom jungen Studenten bis zum älteren Erwachsenen, der seinen Geist fit halten will: AllegraMente passt sich jedem Niveau an.",
+    "sci.sub": "Jede \u00dcbung tr\u00e4gt die Handschrift von Forschern, die unser Verst\u00e4ndnis des Ged\u00e4chtnisses in den letzten 150 Jahren gepr\u00e4gt haben.",
+    "tgt.label": "F\u00fcr wen",
+    "tgt.title": "F\u00fcr alle, die ernsthaft trainieren wollen",
+    "tgt.sub": "Vom jungen Studenten bis zum \u00e4lteren Erwachsenen, der seinen Geist fit halten will: AllegraMente passt sich jedem Niveau an.",
     "feat.label": "Funktionen",
-    "feat.title": "Alles was man braucht, nichts Überflüssiges",
-    "feat.sub": "AllegraMente ist vollständig, ohne Abonnement und respektiert Ihre Privatsphäre zu 100 %.",
+    "feat.title": "Alles was man braucht. Nichts das ablenkt.",
+    "feat.sub": "AllegraMente ist vollst\u00e4ndig, ohne Abonnement und respektiert Ihre Privatsph\u00e4re zu 100%.",
     "sc.label": "Screenshots",
     "sc.title": "Elegant, intuitiv, effektiv",
-    "sc.sub": "Eine dunkle Oberfläche, die nicht ablenkt — jedes Element im Dienst des kognitiven Trainings.",
+    "sc.sub": "Eine dunkle Oberfl\u00e4che, die nicht ablenkt \u2014 jedes Element im Dienst des kognitiven Trainings.",
     "sc.lbl1": "Startseite",
     "sc.lbl2": "Kognitive Karte",
     "sc.lbl3": "Fortschritt",
     "sc.lbl4": "Ergebnisse",
-    "cta.pill": "Jetzt im App Store verfügbar",
+    "cta.pill": "Jetzt im App Store verf\u00fcgbar",
     "cta.title": "Fangen wir an?",
-    "cta.sub": "AllegraMente ist kostenlos im App Store erhältlich. Lade sie jetzt herunter und fang an zu trainieren.",
-    "cta.badge_text": "App Store · iPhone",
+    "cta.sub": "AllegraMente ist kostenlos, essentiell und auf seri\u00f6sen Grundlagen aufgebaut. Lade sie herunter und beginne ein t\u00e4gliches kognitives Training \u2014 ohne L\u00e4rm, ohne Abonnement, ohne Kompromisse.",
+    "cta.badge_text": "App Store \u00b7 iPhone",
     "cta.badge_tag": "Kostenlos laden",
     "footer.support": "Support",
-    "footer.copy": "© 2026 AllegraMente · Alle Rechte vorbehalten"
+    "footer.copy": "\u00a9 2026 AllegraMente \u00b7 Alle Rechte vorbehalten"
   }
 };
-
 const CATS = [
-  {icon:"\uD83E\uDDE0",color:"#2D7FF9",n:9, it:"Memoria di Lavoro",      en:"Working Memory",      es:"Memoria de Trabajo", fr:"Mémoire de travail", de:"Arbeitsgedächtnis"},
-  {icon:"\u229E", color:"#9B5CF6",n:7, it:"Memoria Visuo-Spaziale", en:"Visuospatial Memory", es:"Memoria Visuoespacial"},
-  {icon:"\uD83D\uDCAC",color:"#00BFA5",n:10,it:"Memoria Verbale",         en:"Verbal Memory",       es:"Memoria Verbal"},
-  {icon:"\u26A1",color:"#FF8C42",n:7, it:"Attenzione e Velocit\u00e0",   en:"Attention & Speed",   es:"Atenci\u00f3n y Velocidad"},
-  {icon:"\u23F0",color:"#00D4FF",n:3, it:"Memoria Prospettica",     en:"Prospective Memory",  es:"Memoria Prospectiva", fr:"Mémoire visuospatiale", de:"Visuospatiales Gedächtnis"},
-  {icon:"\uD83D\uDDFA",color:"#1DE9B6",n:4, it:"Memoria di Contesto",     en:"Context Memory",      es:"Memoria de Contexto"},
-  {icon:"\uD83D\uDCA1",color:"#FFD740",n:7, it:"Tecniche Mnemoniche",     en:"Mnemonic Techniques", es:"T\u00e9cnicas Mnem\u00f3nicas", fr:"Mémoire verbale", de:"Verbales Gedächtnis"},
-  {icon:"\uD83D\uDCD6",color:"#FF5370",n:4, it:"Memoria Episodica",       en:"Episodic Memory",     es:"Memoria Epis\u00f3dica"},
-  {icon:"\uD83D\uDC41",color:"#82B1FF",n:2, it:"Memoria Implicita",       en:"Implicit Memory",     es:"Memoria Impl\u00edcita", fr:"Attention et vitesse", de:"Aufmerksamkeit und Geschwindigkeit"},
-  {icon:"\uD83C\uDFAF",color:"#FF5370",n:3, it:"Attenzione Divisa",       en:"Divided Attention",   es:"Atenci\u00f3n Dividida"},
-  {icon:"\u2753",color:"#7C4DFF",n:3, it:"Metamemoria",             en:"Metamemory",          es:"Metamemoria", fr:"Mémoire prospective", de:"Prospektives Gedächtnis"},
+  {
+    "icon": "\ud83e\udde0",
+    "color": "#2D7FF9",
+    "n": 9,
+    "it": "Memoria di Lavoro",
+    "en": "Working Memory",
+    "es": "Memoria de Trabajo",
+    "fr": "M\u00e9moire de travail",
+    "de": "Arbeitsged\u00e4chtnis",
+    "it_desc": "La RAM del tuo cervello. Trattieni e manipoli informazioni mentre pensi, ragioni e decidi.",
+    "en_desc": "The RAM of your brain. Retain and manipulate information while you think, reason and decide.",
+    "es_desc": "La RAM de tu cerebro. Retiene y manipula informaci\u00f3n mientras piensas, razonas y decides.",
+    "fr_desc": "La RAM de votre cerveau. Vous retenez et manipulez des informations pendant que vous pensez, raisonnez et d\u00e9cidez.",
+    "de_desc": "Das RAM deines Gehirns. Du beh\u00e4ltst und verarbeitest Informationen w\u00e4hrend du denkst, urteilst und entscheidest."
+  },
+  {
+    "icon": "\u229e",
+    "color": "#9B5CF6",
+    "n": 7,
+    "it": "Memoria Visuo-Spaziale",
+    "en": "Visuospatial Memory",
+    "es": "Memoria Visuoespacial",
+    "fr": "M\u00e9moire visuospatiale",
+    "de": "Visuospatiales Ged\u00e4chtnis",
+    "it_desc": "Ti orienti nello spazio, ricordi dove hai messo le cose, visualizzi mentalmente percorsi e configurazioni.",
+    "en_desc": "You navigate space, remember where you put things, mentally visualise routes and configurations.",
+    "es_desc": "Te orientas en el espacio, recuerdas d\u00f3nde pusiste las cosas, visualizas mentalmente rutas y configuraciones.",
+    "fr_desc": "Vous vous orientez dans l\u2019espace, vous souvenez o\u00f9 vous avez mis les choses, visualisez mentalement des parcours.",
+    "de_desc": "Du orientierst dich im Raum, erinnerst dich wo du Dinge hingelegt hast, visualisierst mental Wege und Konfigurationen."
+  },
+  {
+    "icon": "\ud83d\udcac",
+    "color": "#00BFA5",
+    "n": 10,
+    "it": "Memoria Verbale",
+    "en": "Verbal Memory",
+    "es": "Memoria Verbal",
+    "fr": "M\u00e9moire verbale",
+    "de": "Verbales Ged\u00e4chtnis",
+    "it_desc": "Parole, nomi, frasi. La capacit\u00e0 di ricordare ci\u00f2 che leggi, ascolti e dici.",
+    "en_desc": "Words, names, sentences. The ability to remember what you read, hear and say.",
+    "es_desc": "Palabras, nombres, frases. La capacidad de recordar lo que lees, escuchas y dices.",
+    "fr_desc": "Mots, noms, phrases. La capacit\u00e9 de retenir ce que vous lisez, entendez et dites.",
+    "de_desc": "W\u00f6rter, Namen, S\u00e4tze. Die F\u00e4higkeit, sich zu erinnern, was du liest, h\u00f6rst und sagst."
+  },
+  {
+    "icon": "\u26a1",
+    "color": "#FF8C42",
+    "n": 7,
+    "it": "Attenzione e Velocit\u00e0",
+    "en": "Attention & Speed",
+    "es": "Atenci\u00f3n y Velocidad",
+    "fr": "Attention et vitesse",
+    "de": "Aufmerksamkeit und Geschwindigkeit",
+    "it_desc": "Reagi, focalizzi, filtri le distrazioni. La qualit\u00e0 della tua concentrazione nel momento presente.",
+    "en_desc": "React, focus, filter distractions. The quality of your concentration in the present moment.",
+    "es_desc": "Reaccionas, focalizas, filtras las distracciones. La calidad de tu concentraci\u00f3n en el momento presente.",
+    "fr_desc": "R\u00e9agir, vous concentrer, filtrer les distractions. La qualit\u00e9 de votre concentration dans le moment pr\u00e9sent.",
+    "de_desc": "Reagieren, fokussieren, Ablenkungen filtern. Die Qualit\u00e4t deiner Konzentration im gegenw\u00e4rtigen Moment."
+  },
+  {
+    "icon": "\u23f0",
+    "color": "#00D4FF",
+    "n": 3,
+    "it": "Memoria Prospettica",
+    "en": "Prospective Memory",
+    "es": "Memoria Prospectiva",
+    "fr": "M\u00e9moire prospective",
+    "de": "Prospektives Ged\u00e4chtnis",
+    "it_desc": "Ricordarti di fare qualcosa nel momento giusto. \u201cDevo prendere le medicine alle 8\u201d \u2014 quella \u00e8 lei.",
+    "en_desc": "Remembering to do something at the right moment. \u201cI need to take my medicine at 8\u201d \u2014 that\u2019s this one.",
+    "es_desc": "Recordar hacer algo en el momento justo. \u201cTengo que tomar la medicina a las 8\u201d \u2014 esa es ella.",
+    "fr_desc": "Se souvenir de faire quelque chose au bon moment. \u201cJe dois prendre mes m\u00e9dicaments \u00e0 8h\u201d \u2014 c\u2019est elle.",
+    "de_desc": "Daran erinnern, etwas zum richtigen Zeitpunkt zu tun. \u201cIch muss um 8 Uhr meine Medizin nehmen\u201d \u2014 das ist sie."
+  },
+  {
+    "icon": "\ud83d\uddfa",
+    "color": "#1DE9B6",
+    "n": 4,
+    "it": "Memoria di Contesto",
+    "en": "Context Memory",
+    "es": "Memoria de Contexto",
+    "fr": "M\u00e9moire contextuelle",
+    "de": "Kontextged\u00e4chtnis",
+    "it_desc": "Non solo cosa \u00e8 successo, ma dove, quando e in quale circostanza. Il tessuto dei ricordi.",
+    "en_desc": "Not just what happened, but where, when and under what circumstances. The fabric of memories.",
+    "es_desc": "No solo qu\u00e9 ocurri\u00f3, sino d\u00f3nde, cu\u00e1ndo y en qu\u00e9 circunstancia. El tejido de los recuerdos.",
+    "fr_desc": "Pas seulement ce qui s\u2019est pass\u00e9, mais o\u00f9, quand et dans quelles circonstances. Le tissu des souvenirs.",
+    "de_desc": "Nicht nur was passiert ist, sondern wo, wann und unter welchen Umst\u00e4nden. Das Gewebe der Erinnerungen."
+  },
+  {
+    "icon": "\ud83d\udca1",
+    "color": "#FFD740",
+    "n": 7,
+    "it": "Tecniche Mnemoniche",
+    "en": "Mnemonic Techniques",
+    "es": "T\u00e9cnicas Mnem\u00f3nicas",
+    "fr": "Techniques mn\u00e9motechniques",
+    "de": "Mnemonische Techniken",
+    "it_desc": "Metodi collaudati per memorizzare meglio: Metodo dei Loci, Pegword, Chunking. La memoria si impara.",
+    "en_desc": "Proven methods to remember better: Method of Loci, Pegword, Chunking. Memory can be learned.",
+    "es_desc": "M\u00e9todos probados para memorizar mejor: M\u00e9todo de los Loci, Pegword, Chunking. La memoria se aprende.",
+    "fr_desc": "M\u00e9thodes \u00e9prouv\u00e9es pour mieux m\u00e9moriser: M\u00e9thode des Loci, Pegword, Chunking. La m\u00e9moire s\u2019apprend.",
+    "de_desc": "Bew\u00e4hrte Methoden zum besseren Merken: Loci-Methode, Pegword, Chunking. Ged\u00e4chtnis kann man lernen."
+  },
+  {
+    "icon": "\ud83d\udcd6",
+    "color": "#FF5370",
+    "n": 4,
+    "it": "Memoria Episodica",
+    "en": "Episodic Memory",
+    "es": "Memoria Epis\u00f3dica",
+    "fr": "M\u00e9moire \u00e9pisodique",
+    "de": "Episodisches Ged\u00e4chtnis",
+    "it_desc": "Ricordare una conversazione, una scena, una sequenza di eventi. La memoria che ricostruisce il passato in modo ordinato.",
+    "en_desc": "Remembering a conversation, a scene, a sequence of events. The memory that reconstructs the past in an orderly way.",
+    "es_desc": "Recordar una conversaci\u00f3n, una escena, una secuencia de eventos. La memoria que reconstruye el pasado de forma ordenada.",
+    "fr_desc": "Se souvenir d\u2019une conversation, d\u2019une sc\u00e8ne, d\u2019une s\u00e9quence d\u2019\u00e9v\u00e9nements. La m\u00e9moire qui reconstruit le pass\u00e9 de fa\u00e7on ordonn\u00e9e.",
+    "de_desc": "Ein Gespr\u00e4ch, eine Szene, eine Ereignisfolge erinnern. Das Ged\u00e4chtnis, das die Vergangenheit geordnet rekonstruiert."
+  },
+  {
+    "icon": "\ud83d\udc41",
+    "color": "#82B1FF",
+    "n": 2,
+    "it": "Memoria Implicita",
+    "en": "Implicit Memory",
+    "es": "Memoria Impl\u00edcita",
+    "fr": "M\u00e9moire implicite",
+    "de": "Implizites Ged\u00e4chtnis",
+    "it_desc": "Ci\u00f2 che sai fare senza pensarci. Apprendimento procedurale e riconoscimento automatico.",
+    "en_desc": "What you know how to do without thinking. Procedural learning and automatic recognition.",
+    "es_desc": "Lo que sabes hacer sin pensarlo. Aprendizaje procedimental y reconocimiento autom\u00e1tico.",
+    "fr_desc": "Ce que vous savez faire sans y penser. Apprentissage proc\u00e9dural et reconnaissance automatique.",
+    "de_desc": "Was du kannst, ohne dar\u00fcber nachzudenken. Prozedurales Lernen und automatische Wiedererkennung."
+  },
+  {
+    "icon": "\ud83c\udfaf",
+    "color": "#FF5370",
+    "n": 3,
+    "it": "Attenzione Divisa",
+    "en": "Divided Attention",
+    "es": "Atenci\u00f3n Dividida",
+    "fr": "Attention divis\u00e9e",
+    "de": "Geteilte Aufmerksamkeit",
+    "it_desc": "Gestire pi\u00f9 cose contemporaneamente senza perdere il filo. La mente multitasking, allenata.",
+    "en_desc": "Managing several things at once without losing track. The trained multitasking mind.",
+    "es_desc": "Gestionar varias cosas a la vez sin perder el hilo. La mente multitarea, entrenada.",
+    "fr_desc": "G\u00e9rer plusieurs choses \u00e0 la fois sans perdre le fil. L\u2019esprit multit\u00e2che, entra\u00een\u00e9.",
+    "de_desc": "Mehrere Dinge gleichzeitig verwalten ohne den Faden zu verlieren. Der trainierte Multitasking-Geist."
+  },
+  {
+    "icon": "\u2753",
+    "color": "#7C4DFF",
+    "n": 3,
+    "it": "Metamemoria",
+    "en": "Metamemory",
+    "es": "Metamemoria",
+    "fr": "M\u00e9tam\u00e9moire",
+    "de": "Metaged\u00e4chtnis",
+    "it_desc": "Capire come funziona la tua memoria. Sapere cosa sai, e cosa no. La consapevolezza cognitiva.",
+    "en_desc": "Understanding how your memory works. Knowing what you know, and what you don\u2019t. Cognitive awareness.",
+    "es_desc": "Entender c\u00f3mo funciona tu memoria. Saber qu\u00e9 sabes y qu\u00e9 no. La conciencia cognitiva.",
+    "fr_desc": "Comprendre comment fonctionne votre m\u00e9moire. Savoir ce que vous savez, et ce que vous ne savez pas. La conscience cognitive.",
+    "de_desc": "Verstehen, wie dein Ged\u00e4chtnis funktioniert. Wissen, was du wei\u00dft und was nicht. Kognitive Bewusstheit."
+  }
 ];
-
 const SCI = [
-  {author:"Ebbinghaus",year:"1885",title:{it:"Curva dell\u2019oblio",en:"Forgetting Curve",es:"Curva del Olvido",fr:"Courbe de l’oubli",de:"Vergessenskurve"},desc:{it:"La scoperta fondamentale sull\u2019apprendimento associativo e il decadimento della memoria nel tempo.",en:"The foundational discovery on associative learning and memory decay over time.",es:"El descubrimiento fundamental sobre el aprendizaje asociativo y el deterioro de la memoria.",fr:"La découverte fondamentale sur l’apprentissage associatif et le déclin de la mémoire dans le temps.",de:"Die grundlegende Entdeckung über assoziatives Lernen und den Gedächtnisverfall im Laufe der Zeit."}},
-  {author:"Baddeley & Hitch",year:"1974",title:{it:"Modello multicomponente della WM",en:"Multicomponent WM Model",es:"Modelo Multicomponente de MT",fr:"Modèle multicomposant de la MDT",de:"Multikomponenten-Modell des AG"},desc:{it:"Il framework teorico alla base di tutti gli esercizi di memoria di lavoro in AllegraMente.",en:"The theoretical framework underlying all working memory exercises in AllegraMente.",es:"El marco te\u00f3rico subyacente a todos los ejercicios de memoria de trabajo.",fr:"Le cadre théorique à la base de tous les exercices de mémoire de travail dans AllegraMente.",de:"Das theoretische Rahmenwerk, das allen Arbeitsgedächtnisübungen in AllegraMente zugrunde liegt."}},
-  {author:"Tulving",year:"1972",title:{it:"Memoria episodica vs. semantica",en:"Episodic vs. Semantic Memory",es:"Memoria Epis\u00f3dica vs. Sem\u00e1ntica",fr:"Mémoire épisodique vs. sémantique",de:"Episodisches vs. semantisches Gedächtnis"},desc:{it:"La distinzione fondamentale tra ricordi personali e conoscenze generali, base della neuropsicologia moderna.",en:"The fundamental distinction between personal memories and general knowledge, foundation of modern neuropsychology.",es:"La distinci\u00f3n fundamental entre recuerdos personales y conocimientos generales.",fr:"La distinction fondamentale entre souvenirs personnels et connaissances générales, base de la neuropsychologie moderne.",de:"Die grundlegende Unterscheidung zwischen persönlichen Erinnerungen und allgemeinem Wissen, Grundlage der modernen Neuropsychologie."}},
-  {author:"Stroop",year:"1935",title:{it:"Conflitto attenzione-inibizione",en:"Attention-Inhibition Conflict",es:"Conflicto Atenci\u00f3n-Inhibici\u00f3n",fr:"Conflit attention-inhibition",de:"Aufmerksamkeits-Inhibitions-Konflikt"},desc:{it:"Uno degli esperimenti pi\u00f9 replicati in psicologia, base del Modified Stroop presente in AllegraMente.",en:"One of the most replicated experiments in psychology, basis of the Modified Stroop in AllegraMente.",es:"Uno de los experimentos m\u00e1s replicados en psicolog\u00eda.",fr:"L’une des expériences les plus répliquées en psychologie, base du Modified Stroop dans AllegraMente.",de:"Eines der am häufigsten replizierten Experimente in der Psychologie, Grundlage des Modified Stroop in AllegraMente."}},
-  {author:"Jaeggi et al.",year:"2008 \u00b7 PNAS",title:{it:"N-Back e intelligenza fluida",en:"N-Back & Fluid Intelligence",es:"N-Back e Inteligencia Fluida",fr:"N-Back et intelligence fluide",de:"N-Back und fluide Intelligenz"},desc:{it:"Studio pubblicato sui PNAS che ha dimostrato il trasferimento dell\u2019allenamento con N-Back alla memoria di lavoro fluida.",en:"PNAS study demonstrating transfer of N-Back training to fluid working memory.",es:"Estudio publicado en PNAS sobre la transferencia del entrenamiento N-Back.",fr:"Étude publiée dans PNAS démontrant le transfert de l’entraînement N-Back à la mémoire de travail fluide.",de:"In PNAS veröffentlichte Studie, die den Transfer des N-Back-Trainings auf das fluide Arbeitsgedächtnis nachwies."}},
-  {author:"O\u2019Keefe & Nadel",year:"1978 \u00b7 Nobel 2014",title:{it:"Cellule di posto e navigazione spaziale",en:"Place Cells & Spatial Navigation",es:"C\u00e9lulas de Lugar y Navegaci\u00f3n",fr:"Cellules de lieu et navigation spatiale",de:"Ortszellen und räumliche Navigation"},desc:{it:"La teoria alla base degli esercizi di memoria spaziale, premiata con il Nobel per la Medicina nel 2014.",en:"The theory underlying spatial memory exercises, awarded the Nobel Prize in Medicine in 2014.",es:"La teor\u00eda tras los ejercicios de memoria espacial, Premio Nobel de Medicina 2014.",fr:"La théorie à la base des exercices de mémoire spatiale, récompensée par le Prix Nobel de Médecine en 2014.",de:"Die Theorie hinter den räumlichen Gedächtnisübungen, ausgezeichnet mit dem Nobelpreis für Medizin 2014."}},
+  {
+    "author": "Ebbinghaus",
+    "year": "1885",
+    "title": {
+      "it": "Curva dell\u2019oblio",
+      "en": "Forgetting Curve",
+      "es": "Curva del Olvido",
+      "fr": "Courbe de l\u2019oubli",
+      "de": "Vergessenskurve"
+    },
+    "desc": {
+      "it": "La scoperta fondamentale sull\u2019apprendimento associativo e il decadimento della memoria nel tempo.",
+      "en": "The foundational discovery on associative learning and memory decay over time.",
+      "es": "El descubrimiento fundamental sobre el aprendizaje asociativo y el deterioro de la memoria.",
+      "fr": "La d\u00e9couverte fondamentale sur l\u2019apprentissage associatif et le d\u00e9clin de la m\u00e9moire dans le temps.",
+      "de": "Die grundlegende Entdeckung \u00fcber assoziatives Lernen und den Ged\u00e4chtnisverfall im Laufe der Zeit."
+    }
+  },
+  {
+    "author": "Baddeley & Hitch",
+    "year": "1974",
+    "title": {
+      "it": "Modello multicomponente della WM",
+      "en": "Multicomponent WM Model",
+      "es": "Modelo Multicomponente de MT",
+      "fr": "Mod\u00e8le multicomposant de la MDT",
+      "de": "Multikomponenten-Modell des AG"
+    },
+    "desc": {
+      "it": "Il framework teorico alla base di tutti gli esercizi di memoria di lavoro in AllegraMente.",
+      "en": "The theoretical framework underlying all working memory exercises in AllegraMente.",
+      "es": "El marco te\u00f3rico subyacente a todos los ejercicios de memoria de trabajo.",
+      "fr": "Le cadre th\u00e9orique \u00e0 la base de tous les exercices de m\u00e9moire de travail dans AllegraMente.",
+      "de": "Das theoretische Rahmenwerk, das allen Arbeitsged\u00e4chtnis\u00fcbungen in AllegraMente zugrunde liegt."
+    }
+  },
+  {
+    "author": "Tulving",
+    "year": "1972",
+    "title": {
+      "it": "Memoria episodica vs. semantica",
+      "en": "Episodic vs. Semantic Memory",
+      "es": "Memoria Epis\u00f3dica vs. Sem\u00e1ntica",
+      "fr": "M\u00e9moire \u00e9pisodique vs. s\u00e9mantique",
+      "de": "Episodisches vs. semantisches Ged\u00e4chtnis"
+    },
+    "desc": {
+      "it": "La distinzione fondamentale tra ricordi personali e conoscenze generali, base della neuropsicologia moderna.",
+      "en": "The fundamental distinction between personal memories and general knowledge, foundation of modern neuropsychology.",
+      "es": "La distinci\u00f3n fundamental entre recuerdos personales y conocimientos generales.",
+      "fr": "La distinction fondamentale entre souvenirs personnels et connaissances g\u00e9n\u00e9rales, base de la neuropsychologie moderne.",
+      "de": "Die grundlegende Unterscheidung zwischen pers\u00f6nlichen Erinnerungen und allgemeinem Wissen."
+    }
+  },
+  {
+    "author": "Stroop",
+    "year": "1935",
+    "title": {
+      "it": "Conflitto attenzione-inibizione",
+      "en": "Attention-Inhibition Conflict",
+      "es": "Conflicto Atenci\u00f3n-Inhibici\u00f3n",
+      "fr": "Conflit attention-inhibition",
+      "de": "Aufmerksamkeits-Inhibitions-Konflikt"
+    },
+    "desc": {
+      "it": "Uno degli esperimenti pi\u00f9 replicati in psicologia, base del Modified Stroop presente in AllegraMente.",
+      "en": "One of the most replicated experiments in psychology, basis of the Modified Stroop in AllegraMente.",
+      "es": "Uno de los experimentos m\u00e1s replicados en psicolog\u00eda.",
+      "fr": "L\u2019une des exp\u00e9riences les plus r\u00e9pliqu\u00e9es en psychologie, base du Modified Stroop dans AllegraMente.",
+      "de": "Eines der am h\u00e4ufigsten replizierten Experimente in der Psychologie."
+    }
+  },
+  {
+    "author": "Jaeggi et al.",
+    "year": "2008 \u00b7 PNAS",
+    "title": {
+      "it": "N-Back e intelligenza fluida",
+      "en": "N-Back & Fluid Intelligence",
+      "es": "N-Back e Inteligencia Fluida",
+      "fr": "N-Back et intelligence fluide",
+      "de": "N-Back und fluide Intelligenz"
+    },
+    "desc": {
+      "it": "Studio pubblicato sui PNAS che ha dimostrato il trasferimento dell\u2019allenamento con N-Back alla memoria di lavoro fluida.",
+      "en": "PNAS study demonstrating transfer of N-Back training to fluid working memory.",
+      "es": "Estudio publicado en PNAS sobre la transferencia del entrenamiento N-Back.",
+      "fr": "\u00c9tude publi\u00e9e dans PNAS d\u00e9montrant le transfert de l\u2019entra\u00eenement N-Back \u00e0 la m\u00e9moire de travail fluide.",
+      "de": "In PNAS ver\u00f6ffentlichte Studie, die den Transfer des N-Back-Trainings auf das fluide Arbeitsged\u00e4chtnis nachwies."
+    }
+  },
+  {
+    "author": "O\u2019Keefe & Nadel",
+    "year": "1978 \u00b7 Nobel 2014",
+    "title": {
+      "it": "Cellule di posto e navigazione spaziale",
+      "en": "Place Cells & Spatial Navigation",
+      "es": "C\u00e9lulas de Lugar y Navegaci\u00f3n",
+      "fr": "Cellules de lieu et navigation spatiale",
+      "de": "Ortszellen und r\u00e4umliche Navigation"
+    },
+    "desc": {
+      "it": "La teoria alla base degli esercizi di memoria spaziale, premiata con il Nobel per la Medicina nel 2014.",
+      "en": "The theory underlying spatial memory exercises, awarded the Nobel Prize in Medicine in 2014.",
+      "es": "La teor\u00eda tras los ejercicios de memoria espacial, Premio Nobel de Medicina 2014.",
+      "fr": "La th\u00e9orie \u00e0 la base des exercices de m\u00e9moire spatiale, r\u00e9compens\u00e9e par le Prix Nobel de M\u00e9decine en 2014.",
+      "de": "Die Theorie hinter den r\u00e4umlichen Ged\u00e4chtnis\u00fcbungen, ausgezeichnet mit dem Nobelpreis f\u00fcr Medizin 2014."
+    }
+  }
 ];
-
 const TGT = [
-  {emoji:"\uD83D\uDC74\uD83D\uDC75",title:{it:"Adulti e anziani",en:"Adults & Seniors",es:"Adultos y Mayores",fr:"Adultes et seniors",de:"Erwachsene und Senioren"},desc:{it:"Il declino cognitivo inizia prima di quanto si pensi. AllegraMente offre uno strumento scientifico per mantenersi mentalmente attivi con l\u2019avanzare dell\u2019et\u00e0.",en:"Cognitive decline begins earlier than most think. AllegraMente provides a scientific tool to stay mentally active as you age.",es:"El declive cognitivo comienza antes de lo que se cree. AllegraMente ofrece una herramienta cient\u00edfica para mantenerse mentalmente activo.",fr:"Le déclin cognitif commence plus tôt qu’on ne le pense. AllegraMente offre un outil scientifique pour rester mentalement actif avec l’âge.",de:"Kognitiver Abbau beginnt früher als man denkt. AllegraMente bietet ein wissenschaftliches Werkzeug, um mit zunehmendem Alter geistig aktiv zu bleiben."}},
-  {emoji:"\uD83D\uDCDA\uD83C\uDF93",title:{it:"Studenti e professionisti",en:"Students & Professionals",es:"Estudiantes y Profesionales",fr:"Étudiants et professionnels",de:"Studenten und Berufstätige"},desc:{it:"Migliora memoria di lavoro, attenzione e velocit\u00e0 di elaborazione per studio o lavoro. Esercizi come N-Back e Operation Span vengono usati in contesti di potenziamento cognitivo.",en:"Improve working memory, attention and processing speed for study or work. Exercises like N-Back and Operation Span are used in cognitive enhancement research.",es:"Mejora la memoria de trabajo, atenci\u00f3n y velocidad de procesamiento para el estudio o trabajo.",fr:"Améliorez la mémoire de travail, l’attention et la vitesse de traitement pour les études ou le travail. Des exercices comme le N-Back et l’Operation Span sont utilisés dans la recherche sur le renforcement cognitif.",de:"Verbessern Sie Arbeitsgedächtnis, Aufmerksamkeit und Verarbeitungsgeschwindigkeit für Studium oder Beruf. Übungen wie N-Back und Operation Span werden in der kognitiven Forschung eingesetzt."}},
-  {emoji:"\uD83D\uDD2C\uD83E\uDDEC",title:{it:"Curiosi e appassionati",en:"Curious Minds",es:"Mentes Curiosas",fr:"Esprits curieux",de:"Neugierige Köpfe"},desc:{it:"Scopri come funziona davvero la tua memoria attraverso gli stessi paradigmi usati dai ricercatori \u2014 non giochi casuali, ma strumenti validati dalla scienza.",en:"Discover how your memory actually works through the same paradigms used by researchers \u2014 not random games, but scientifically validated tools.",es:"Descubre c\u00f3mo funciona realmente tu memoria a trav\u00e9s de los mismos paradigmas que utilizan los investigadores.",fr:"Découvrez comment fonctionne réellement votre mémoire à travers les mêmes paradigmes utilisés par les chercheurs — pas des jeux aléatoires, mais des outils validés scientifiquement.",de:"Entdecken Sie, wie Ihr Gedächtnis wirklich funktioniert — mit denselben Paradigmen wie Forscher. Keine zufälligen Spiele, sondern wissenschaftlich validierte Werkzeuge."}},
+  {
+    "emoji": "\ud83d\udc74\ud83d\udc75",
+    "title": {
+      "it": "Adulti e anziani",
+      "en": "Adults & Seniors",
+      "es": "Adultos y Mayores",
+      "fr": "Adultes et seniors",
+      "de": "Erwachsene und Senioren"
+    },
+    "desc": {
+      "it": "Il declino cognitivo inizia prima di quanto si pensi. AllegraMente offre uno strumento scientifico per mantenersi mentalmente attivi con l\u2019avanzare dell\u2019et\u00e0.",
+      "en": "Cognitive decline begins earlier than most think. AllegraMente provides a scientific tool to stay mentally active as you age.",
+      "es": "El declive cognitivo comienza antes de lo que se cree. AllegraMente ofrece una herramienta cient\u00edfica para mantenerse mentalmente activo.",
+      "fr": "Le d\u00e9clin cognitif commence plus t\u00f4t qu\u2019on ne le pense. AllegraMente offre un outil scientifique pour rester mentalement actif avec l\u2019\u00e2ge.",
+      "de": "Kognitiver Abbau beginnt fr\u00fcher als man denkt. AllegraMente bietet ein wissenschaftliches Werkzeug, um mit zunehmendem Alter geistig aktiv zu bleiben."
+    }
+  },
+  {
+    "emoji": "\ud83d\udcda\ud83c\udf93",
+    "title": {
+      "it": "Studenti e professionisti",
+      "en": "Students & Professionals",
+      "es": "Estudiantes y Profesionales",
+      "fr": "\u00c9tudiants et professionnels",
+      "de": "Studenten und Berufst\u00e4tige"
+    },
+    "desc": {
+      "it": "Migliora memoria di lavoro, attenzione e velocit\u00e0 di elaborazione per studio o lavoro. Esercizi come N-Back e Operation Span vengono usati in contesti di potenziamento cognitivo.",
+      "en": "Improve working memory, attention and processing speed for study or work. Exercises like N-Back and Operation Span are used in cognitive enhancement research.",
+      "es": "Mejora la memoria de trabajo, atenci\u00f3n y velocidad de procesamiento para el estudio o trabajo.",
+      "fr": "Am\u00e9liorez la m\u00e9moire de travail, l\u2019attention et la vitesse de traitement pour les \u00e9tudes ou le travail.",
+      "de": "Verbessern Sie Arbeitsged\u00e4chtnis, Aufmerksamkeit und Verarbeitungsgeschwindigkeit f\u00fcr Studium oder Beruf."
+    }
+  },
+  {
+    "emoji": "\ud83d\udd2c\ud83e\uddec",
+    "title": {
+      "it": "Curiosi e appassionati",
+      "en": "Curious Minds",
+      "es": "Mentes Curiosas",
+      "fr": "Esprits curieux",
+      "de": "Neugierige K\u00f6pfe"
+    },
+    "desc": {
+      "it": "Scopri come funziona davvero la tua memoria attraverso gli stessi paradigmi usati dai ricercatori \u2014 non giochi casuali, ma strumenti validati dalla scienza.",
+      "en": "Discover how your memory actually works through the same paradigms used by researchers \u2014 not random games, but scientifically validated tools.",
+      "es": "Descubre c\u00f3mo funciona realmente tu memoria a trav\u00e9s de los mismos paradigmas que utilizan los investigadores.",
+      "fr": "D\u00e9couvrez comment fonctionne r\u00e9ellement votre m\u00e9moire \u00e0 travers les m\u00eames paradigmes utilis\u00e9s par les chercheurs.",
+      "de": "Entdecken Sie, wie Ihr Ged\u00e4chtnis wirklich funktioniert \u2014 mit denselben Paradigmen wie Forscher."
+    }
+  }
 ];
-
 const FEATS = [
-  {icon:"\uD83D\uDDFA",title:{it:"Mappa Cognitiva",en:"Cognitive Map",es:"Mapa Cognitivo",fr:"Carte Cognitive",de:"Kognitive Karte"},desc:{it:"Visualizzazione radar di tutte e 11 le categorie cognitive. Identifica subito punti di forza e aree da migliorare.",en:"Radar visualization of all 11 cognitive categories. Instantly identify your strengths and areas for improvement.",es:"Visualizaci\u00f3n radar de las 11 categor\u00edas cognitivas.",fr:"Visualisation radar de tous les 11 domaines cognitifs. Identifiez immédiatement vos points forts et les domaines à améliorer.",de:"Radar-Visualisierung aller 11 kognitiven Bereiche. Erkennen Sie sofort Ihre Stärken und Verbesserungsbereiche."}},
-  {icon:"\uD83D\uDCC4",title:{it:"Report PDF",en:"PDF Report",es:"Informe PDF",fr:"Rapport PDF",de:"PDF-Bericht"},desc:{it:"Esporta un report personalizzabile con statistiche, progressi per categoria e achievement. Monitoraggio reale nel tempo.",en:"Export a customisable report with statistics, per-category progress and achievements. Real tracking over time.",es:"Exporta un informe personalizable con estad\u00edsticas, progreso por categor\u00eda y logros.",fr:"Exportez un rapport personnalisable avec statistiques, progression par domaine et réalisations. Suivi réel dans le temps.",de:"Exportieren Sie einen anpassbaren Bericht mit Statistiken, Fortschritt pro Bereich und Erfolgen. Echtes Tracking über die Zeit."}},
-  {icon:"\uD83D\uDC65",title:{it:"Profili multipli",en:"Multiple Profiles",es:"Perfiles M\u00faltiples",fr:"Profils multiples",de:"Mehrere Profile"},desc:{it:"Crea profili separati per ogni membro della famiglia. Ogni profilo ha la propria storia e statistiche indipendenti.",en:"Create separate profiles for each family member. Each profile has its own independent history and statistics.",es:"Crea perfiles separados para cada miembro de la familia con su propio historial y estad\u00edsticas.",fr:"Créez des profils séparés pour chaque membre de la famille. Chaque profil a son propre historique et statistiques indépendants.",de:"Erstellen Sie separate Profile für jedes Familienmitglied. Jedes Profil hat seine eigene Geschichte und unabhängige Statistiken."}},
-  {icon:"\uD83D\uDD12",title:{it:"Privacy al 100% \u00b7 Nessun abbonamento",en:"100% Privacy \u00b7 No Subscription",es:"100% Privacidad \u00b7 Sin Suscripci\u00f3n",fr:"Vie privée 100 % · Sans abonnement",de:"100 % Datenschutz · Kein Abo"},desc:{it:"Tutti i dati rimangono sul tuo dispositivo. Nessun server, nessun tracciamento, nessun abbonamento.",en:"All data stays on your device. No servers, no tracking, no subscription. Complete app.",es:"Todos los datos permanecen en tu dispositivo. Sin servidores, sin rastreo, sin suscripci\u00f3n.",fr:"Toutes les données restent sur votre appareil. Pas de serveurs, pas de traçage, pas d’abonnement.",de:"Alle Daten bleiben auf Ihrem Gerät. Keine Server, kein Tracking, kein Abonnement."}},
+  {
+    "icon": "\ud83d\uddfa",
+    "title": {
+      "it": "Mappa Cognitiva",
+      "en": "Cognitive Map",
+      "es": "Mapa Cognitivo",
+      "fr": "Carte Cognitive",
+      "de": "Kognitive Karte"
+    },
+    "desc": {
+      "it": "Visualizzazione radar di tutte e 11 le categorie cognitive. Identifica subito punti di forza e aree da migliorare.",
+      "en": "Radar visualization of all 11 cognitive categories. Instantly identify your strengths and areas for improvement.",
+      "es": "Visualizaci\u00f3n radar de las 11 categor\u00edas cognitivas. Identifica de inmediato tus fortalezas y \u00e1reas de mejora.",
+      "fr": "Visualisation radar de tous les 11 domaines cognitifs. Identifiez imm\u00e9diatement vos points forts et les domaines \u00e0 am\u00e9liorer.",
+      "de": "Radar-Visualisierung aller 11 kognitiven Bereiche. Erkennen Sie sofort Ihre St\u00e4rken und Verbesserungsbereiche."
+    }
+  },
+  {
+    "icon": "\ud83d\udcc4",
+    "title": {
+      "it": "Report PDF",
+      "en": "PDF Report",
+      "es": "Informe PDF",
+      "fr": "Rapport PDF",
+      "de": "PDF-Bericht"
+    },
+    "desc": {
+      "it": "Esporta un report personalizzabile con statistiche, progressi per categoria e achievement. Monitoraggio reale nel tempo.",
+      "en": "Export a customisable report with statistics, per-category progress and achievements. Real tracking over time.",
+      "es": "Exporta un informe personalizable con estad\u00edsticas, progreso por categor\u00eda y logros.",
+      "fr": "Exportez un rapport personnalisable avec statistiques, progression par domaine et r\u00e9alisations.",
+      "de": "Exportieren Sie einen anpassbaren Bericht mit Statistiken, Fortschritt pro Bereich und Erfolgen."
+    }
+  },
+  {
+    "icon": "\ud83d\udc65",
+    "title": {
+      "it": "Profili multipli",
+      "en": "Multiple Profiles",
+      "es": "Perfiles M\u00faltiples",
+      "fr": "Profils multiples",
+      "de": "Mehrere Profile"
+    },
+    "desc": {
+      "it": "Crea profili separati per ogni membro della famiglia. Ogni profilo ha la propria storia e statistiche indipendenti.",
+      "en": "Create separate profiles for each family member. Each profile has its own independent history and statistics.",
+      "es": "Crea perfiles separados para cada miembro de la familia con su propio historial y estad\u00edsticas.",
+      "fr": "Cr\u00e9ez des profils s\u00e9par\u00e9s pour chaque membre de la famille. Chaque profil a son propre historique et statistiques ind\u00e9pendants.",
+      "de": "Erstellen Sie separate Profile f\u00fcr jedes Familienmitglied. Jedes Profil hat seine eigene Geschichte und unabh\u00e4ngige Statistiken."
+    }
+  },
+  {
+    "icon": "\ud83d\udd12",
+    "title": {
+      "it": "Privacy al 100% \u00b7 Nessun abbonamento",
+      "en": "100% Privacy \u00b7 No Subscription",
+      "es": "100% Privacidad \u00b7 Sin Suscripci\u00f3n",
+      "fr": "Vie priv\u00e9e 100% \u00b7 Sans abonnement",
+      "de": "100% Datenschutz \u00b7 Kein Abo"
+    },
+    "desc": {
+      "it": "Tutti i dati rimangono sul tuo dispositivo. Nessun server, nessun tracciamento, nessun abbonamento.",
+      "en": "All data stays on your device. No servers, no tracking, no subscription. Complete app.",
+      "es": "Todos los datos permanecen en tu dispositivo. Sin servidores, sin rastreo, sin suscripci\u00f3n.",
+      "fr": "Toutes les donn\u00e9es restent sur votre appareil. Pas de serveurs, pas de tra\u00e7age, pas d\u2019abonnement.",
+      "de": "Alle Daten bleiben auf Ihrem Ger\u00e4t. Keine Server, kein Tracking, kein Abonnement."
+    }
+  }
 ];
 
 function renderCats(lang) {
-  const ex = {it:"esercizi",en:"exercises",es:"ejercicios",fr:"exercices",de:"Übungen"};
-  document.getElementById("catGrid").innerHTML = CATS.map(c =>
-    '<div class="cat-card reveal" style="--c:' + c.color + '"><div class="cat-head"><div class="cat-ico">' + c.icon + '</div><div class="cat-name">' + c[lang] + '</div></div><div class="cat-num">' + c.n + '</div><div class="cat-ex">' + ex[lang] + '</div></div>'
-  ).join("");
+  const ex = {"it":"esercizi","en":"exercises","es":"ejercicios","fr":"exercices","de":"\u00dcbungen"};
+  document.getElementById("catGrid").innerHTML = CATS.map(function(c) {
+    return '<div class="cat-card reveal" style="--c:' + c.color + '">'
+      + '<div class="cat-head"><div class="cat-ico">' + c.icon + '</div>'
+      + '<div class="cat-name">' + c[lang] + '</div></div>'
+      + '<div class="cat-num">' + c.n + '</div>'
+      + '<div class="cat-ex">' + ex[lang] + '</div>'
+      + '<div class="cat-desc">' + (c[lang + "_desc"] || "") + '</div>'
+      + '</div>';
+  }).join("");
   observeReveal();
 }
+
 function renderSci(lang) {
-  document.getElementById("sciGrid").innerHTML = SCI.map(s =>
-    '<div class="sci-card reveal"><div class="sci-author">' + s.author + '</div><div class="sci-year">' + s.year + '</div><div class="sci-title">' + s.title[lang] + '</div><div class="sci-desc">' + s.desc[lang] + '</div></div>'
-  ).join("");
+  document.getElementById("sciGrid").innerHTML = SCI.map(function(s) {
+    return '<div class="sci-card reveal">'
+      + '<div class="sci-author">' + s.author + '</div>'
+      + '<div class="sci-year">' + s.year + '</div>'
+      + '<div class="sci-title">' + s.title[lang] + '</div>'
+      + '<div class="sci-desc">' + s.desc[lang] + '</div>'
+      + '</div>';
+  }).join("");
   observeReveal();
 }
+
 function renderTgt(lang) {
-  document.getElementById("tgtGrid").innerHTML = TGT.map(t =>
-    '<div class="tgt-card reveal"><span class="tgt-em">' + t.emoji + '</span><div class="tgt-title">' + t.title[lang] + '</div><div class="tgt-desc">' + t.desc[lang] + '</div></div>'
-  ).join("");
+  document.getElementById("tgtGrid").innerHTML = TGT.map(function(t) {
+    return '<div class="tgt-card reveal">'
+      + '<span class="tgt-em">' + t.emoji + '</span>'
+      + '<div class="tgt-title">' + t.title[lang] + '</div>'
+      + '<div class="tgt-desc">' + t.desc[lang] + '</div>'
+      + '</div>';
+  }).join("");
   observeReveal();
 }
+
 function renderFeats(lang) {
-  document.getElementById("featGrid").innerHTML = FEATS.map(f =>
-    '<div class="diff-item reveal"><div class="diff-ico">' + f.icon + '</div><div><h4>' + f.title[lang] + '</h4><p>' + f.desc[lang] + '</p></div></div>'
-  ).join("");
+  document.getElementById("featGrid").innerHTML = FEATS.map(function(f) {
+    return '<div class="diff-item reveal">'
+      + '<div class="diff-ico">' + f.icon + '</div>'
+      + '<div><h4>' + f.title[lang] + '</h4><p>' + f.desc[lang] + '</p></div>'
+      + '</div>';
+  }).join("");
   observeReveal();
 }
+
 function setLang(lang) {
-  document.querySelectorAll(".lang-btn").forEach(b => b.classList.toggle("active", b.textContent.trim().toLowerCase() === lang));
-  document.querySelectorAll("[data-i18n]").forEach(el => { const k = el.getAttribute("data-i18n"); if (T[lang][k] !== undefined) el.textContent = T[lang][k]; });
-  renderCats(lang); renderSci(lang); renderTgt(lang); renderFeats(lang);
+  document.querySelectorAll(".lang-btn").forEach(function(b) {
+    b.classList.toggle("active", b.textContent.trim().toLowerCase() === lang);
+  });
+  document.querySelectorAll("[data-i18n]").forEach(function(el) {
+    var k = el.getAttribute("data-i18n");
+    if (T[lang] && T[lang][k] !== undefined) el.textContent = T[lang][k];
+  });
+  renderCats(lang);
+  renderSci(lang);
+  renderTgt(lang);
+  renderFeats(lang);
 }
+
 function observeReveal() {
-  const io = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }); }, {threshold:0.1});
-  document.querySelectorAll(".reveal:not(.in)").forEach(el => io.observe(el));
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+    });
+  }, {threshold: 0.1});
+  document.querySelectorAll(".reveal:not(.in)").forEach(function(el) { io.observe(el); });
 }
-document.addEventListener("DOMContentLoaded", function() { setLang("it"); observeReveal(); });
+
+document.addEventListener("DOMContentLoaded", function() {
+  setLang("it");
+  observeReveal();
+});
 </script>
 </body>
 </html>
